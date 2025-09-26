@@ -27,10 +27,6 @@ Além disso, por padrão, o Jekill (Construtor de páginas) não lê diretórios
 
 Atente-se em **não mexer** em outros arquivos para evitar conflitos e deixar o nome do projeto igual ao nome do repositório do mesmo!
 
-## Bom uso
-
-Para evitar conflitos, busque desenvolver/colar o manual do seu sistema em **outra branch** copiada da `main` e faça o merge com a `main` atualizada:
-
 ### Passos
 
 ```
