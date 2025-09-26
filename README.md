@@ -4,6 +4,12 @@ Este repositório é destinado aos manuais dos sistemas desenvolvidos na Fabrica
 
 Sua utilização se dá por um repositório geral com a necessidade de uma pasta exclusiva para cada manual. Portanto, ao inserir seu manual neste repositório, deve se atentar aos cuidados:
 
+## Inb4
+
+Cuidado com caminhos absolutos no seu projeto de documentação, opte por utilizar caminhos relativos
+
+Além disso, por padrão, o Jekill (Construtor de páginas) não lê diretórios começados com _ (underscore).
+
 ## Estrutura de pastas
 
 ```
