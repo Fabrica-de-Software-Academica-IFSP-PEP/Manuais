@@ -34,16 +34,14 @@ Para evitar conflitos, busque desenvolver/colar o manual do seu sistema em **out
 ### Passos
 
 ```
-git clone https://github.com/Fabrica-de-Software-Academica-IFSP-PEP/Manuais.git`
-git checkout -b nova-branch
+***faça um fork do projeto***
+git clone https://github.com/[nome-de-usuario]/Manuais.git`
+***crie sua pasta com o nome adequado***
+***coloque suas alterações na sua pasta***
 git add .
-git commit -m "adicionando manual do projeto [nome-do-projeto]"
-git checkout main
-git pull
-git merge main nova-branch
-git add .
-git commit -m "merge: adicionando [nome-do-projeto]"
+git commit -m "adicionando [nome-do-projeto]"
 git push -u origin main
+***abra uma pull request***
 ```
 
 ### Acesse e verifique
