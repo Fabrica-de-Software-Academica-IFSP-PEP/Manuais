@@ -39,3 +39,8 @@ git add .
 git commit -m "merge: adicionando [nome-do-projeto]"
 git push -u origin main
 ```
+
+### Acesse e verifique
+
+Se tudo ocorreu tudo bem, sua página deve estar disponível em:
+https://fabrica-de-software-academica-ifsp-pep.github.io/Manuais/nome-da-pasta-no-repositorio/
