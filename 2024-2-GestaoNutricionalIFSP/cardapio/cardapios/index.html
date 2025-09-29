@@ -1,0 +1,1930 @@
+<!DOCTYPE html><html lang="pt" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Manual do Sistema de Gestão Nutricional (SGN) 2025">
+      
+      
+      
+      
+        <link rel="prev" href="../../alimento/tutoriais-alimento/">
+      
+      
+        <link rel="next" href="../tutoriais-cardapio/">
+      
+      
+      <link rel="icon" href="../../assets/IFLOGO16X16.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Tela Cardápios - Manual • Sistema de Gestão Nutricional</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cardapios" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Manual • Sistema de Gestão Nutricional" class="md-header__button md-logo" aria-label="Manual • Sistema de Gestão Nutricional" data-md-component="logo">
+      
+  <img src="../../assets/IFLOGO.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Manual • Sistema de Gestão Nutricional
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tela Cardápios
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Manual • Sistema de Gestão Nutricional" class="md-nav__button md-logo" aria-label="Manual • Sistema de Gestão Nutricional" data-md-component="logo">
+      
+  <img src="../../assets/IFLOGO.png" alt="logo">
+
+    </a>
+    Manual • Sistema de Gestão Nutricional
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Início
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introducao/introducao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introdução
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Login
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Login
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../login/tutorial-login/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutorial: Efetuar Login
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../login/tutorial-recuperar-senha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutorial: Recuperar Senha
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Alimentos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Alimentos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alimento/alimentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tela Alimentos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alimento/tutoriais-alimento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Alimento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Cardápios
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Cardápios
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Tela Cardápios
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tela Cardápios
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristicas-da-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Características da Interface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Características da Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layout-e-navegacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layout e Navegação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#area-principal-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Área Principal de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Área Principal de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#informacoes-exibidas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informações Exibidas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidades-de-busca-e-filtros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionalidades de Busca e Filtros
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acoes-disponiveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ações Disponíveis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dados-dos-cardapios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dados dos Cardápios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dados dos Cardápios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#informacoes-nutricionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informações Nutricionais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-temporal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estrutura Temporal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcionalidades-principais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionalidades Principais
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funcionalidades Principais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criacao-de-cardapios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criação de Cardápios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizacao-detalhada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualização Detalhada
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edicao-e-atualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edição e Atualização
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clonagem-de-cardapios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clonagem de Cardápios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relatorios-e-analises" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relatórios e Análises
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compartilhamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compartilhamento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cardapio-do-dia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cardápio do Dia
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integracao-com-outros-modulos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integração com Outros Módulos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beneficios-do-modulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefícios do Módulo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Benefícios do Módulo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eficiencia-no-planejamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eficiência no Planejamento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controle-nutricional-rigoroso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controle Nutricional Rigoroso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transparencia-e-comunicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transparência e Comunicação
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutoriais-cardapio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Cardápio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pratos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Pratos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prato/pratos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tela Pratos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prato/tutoriais-prato/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Prato
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7">
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Fornecedores
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Fornecedores
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fornecedor/fornecedores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tela Fornecedores
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fornecedor/tutoriais-fornecedor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Fornecedor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8">
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Produtos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Produtos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../produto/produtos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tela Produtos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../produto/tutoriais-produto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Produto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9">
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Contratos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Contratos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contrato/contratos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tela Contratos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contrato/tutoriais-contrato/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Contrato
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10">
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Empenhos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Empenhos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../empenho/empenhos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tela Empenhos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../empenho/tutoriais-empenho/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Empenho
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11">
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pedidos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Pedidos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pedido/pedidos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tela Pedidos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pedido/tutoriais-pedido/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Pedido
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12">
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Perfis de Usuário
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Perfis de Usuário
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perfis-usuario/tutoriais-usuarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Perfis: Nutricionistas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristicas-da-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Características da Interface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Características da Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layout-e-navegacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layout e Navegação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#area-principal-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Área Principal de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Área Principal de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#informacoes-exibidas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informações Exibidas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidades-de-busca-e-filtros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionalidades de Busca e Filtros
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acoes-disponiveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ações Disponíveis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dados-dos-cardapios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dados dos Cardápios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dados dos Cardápios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#informacoes-nutricionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informações Nutricionais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-temporal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estrutura Temporal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcionalidades-principais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionalidades Principais
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funcionalidades Principais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criacao-de-cardapios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criação de Cardápios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizacao-detalhada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualização Detalhada
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edicao-e-atualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edição e Atualização
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clonagem-de-cardapios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clonagem de Cardápios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relatorios-e-analises" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relatórios e Análises
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compartilhamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compartilhamento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cardapio-do-dia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cardápio do Dia
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integracao-com-outros-modulos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integração com Outros Módulos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beneficios-do-modulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefícios do Módulo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Benefícios do Módulo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eficiencia-no-planejamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eficiência no Planejamento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controle-nutricional-rigoroso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controle Nutricional Rigoroso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transparencia-e-comunicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transparência e Comunicação
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="cardapios">Cardápios</h1>
+<hr>
+<h2 id="visao-geral">Visão Geral</h2>
+<p>A tela de Gestão de Cardápios é o módulo central do Sistema de Gestão Nutricional (SGN), responsável pelo planejamento e organização das refeições. Esta interface permite criar, visualizar, editar e gerenciar cardápios semanais completos, com cálculos nutricionais automáticos e integração total com o banco de <em><a href="../../prato/pratos/">Pratos</a></em> cadastrados.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/telacardapio/telacardapios.png" data-desc-position="bottom"><img alt="Tela de Cardápios" src="../../assets/telacardapio/telacardapios.png"></a></p>
+<h2 id="caracteristicas-da-interface">Características da Interface</h2>
+<h3 id="layout-e-navegacao">Layout e Navegação</h3>
+<ul>
+<li><strong>Barra superior verde</strong>: Menu principal com acesso a todos os módulos do sistema</li>
+<li><strong>Botão Voltar</strong>: Navegação intuitiva para retornar à tela anterior</li>
+<li><strong>Design responsivo</strong>: Interface adaptável para diferentes tamanhos de tela</li>
+<li><strong>Identidade visual consistente</strong>: Seguindo o padrão verde do SGN</li>
+</ul>
+<h3 id="area-principal-de-dados">Área Principal de Dados</h3>
+<p>A interface apresenta uma tabela organizada com as seguintes colunas:</p>
+<h4 id="informacoes-exibidas">Informações Exibidas</h4>
+<ul>
+<li><strong>CARDÁPIO</strong>: Nome e descrição do cardápio planejado</li>
+<li><strong>PERÍODO</strong>: Data de início e fim de vigência</li>
+<li><strong>KCAL DIÁRIA</strong>: Valor calórico total planejado por dia</li>
+<li><strong>STATUS</strong>: Situação atual (Ativo, Inativo, Em Planejamento)</li>
+<li><strong>AÇÕES</strong>: Botões para visualizar, editar, clonar e gerar relatórios</li>
+</ul>
+<h3 id="funcionalidades-de-busca-e-filtros">Funcionalidades de Busca e Filtros</h3>
+<ul>
+<li><strong>Campo de busca</strong>: "Buscar por Cardápio" para filtrar registros rapidamente</li>
+<li><strong>Filtro por período</strong>: Seleção de data de início e fim</li>
+<li><strong>Filtro por status</strong>: Exibição de cardápios ativos, inativos ou em planejamento</li>
+<li><strong>Busca em tempo real</strong>: Resultados atualizados conforme digitação</li>
+</ul>
+<h3 id="acoes-disponiveis">Ações Disponíveis</h3>
+<ul>
+<li><strong>Novo Cardápio</strong>: Botão verde no canto superior direito</li>
+<li><strong>Visualizar</strong>: Ícone de olho para ver detalhes completos</li>
+<li><strong>Editar</strong>: Ícone de lápis para modificar informações</li>
+<li><strong>Clonar</strong>: Ícone de cópia para duplicar cardápios existentes</li>
+<li><strong>Compartilhar</strong>: Ícone de link para gerar URLs de compartilhamento</li>
+<li><strong>Relatórios</strong>: Acesso a relatórios detalhados e impressões</li>
+</ul>
+<h2 id="dados-dos-cardapios">Dados dos Cardápios</h2>
+<h3 id="informacoes-nutricionais">Informações Nutricionais</h3>
+<p>Cada cardápio possui cálculos automáticos de:</p>
+<ul>
+<li><strong>Valor calórico diário</strong> total</li>
+<li><strong>Distribuição de macronutrientes</strong> (carboidratos, proteínas, gorduras)</li>
+<li><strong>Micronutrientes essenciais</strong> (vitaminas e minerais)</li>
+<li><strong>Adequação nutricional</strong> por faixa etária</li>
+<li><strong>Análise de custos</strong> dos ingredientes</li>
+</ul>
+<h3 id="estrutura-temporal">Estrutura Temporal</h3>
+<ul>
+<li><strong>Períodos personalizáveis</strong>: De dias a semanas completas</li>
+<li><strong>Refeições organizadas</strong>: Café da manhã, almoço, lanche e jantar</li>
+<li><strong>Cardápio do dia</strong>: Destaque para o menu atual</li>
+<li><strong>Histórico completo</strong>: Registro de todos os cardápios anteriores</li>
+</ul>
+<h2 id="funcionalidades-principais">Funcionalidades Principais</h2>
+<h3 id="criacao-de-cardapios">Criação de Cardápios</h3>
+<ul>
+<li><strong>Assistente de criação</strong>: Processo guiado para novos cardápios</li>
+<li><strong>Seleção de pratos</strong>: Integração com biblioteca de receitas cadastradas</li>
+<li><strong>Cálculo automático</strong>: Valores nutricionais computados em tempo real</li>
+<li><strong>Validação nutricional</strong>: Verificação de adequação às diretrizes</li>
+<li><strong>Definição de períodos</strong>: Configuração flexível de datas</li>
+</ul>
+<h3 id="visualizacao-detalhada">Visualização Detalhada</h3>
+<ul>
+<li><strong>Visão semanal</strong>: Grade completa com todas as refeições</li>
+<li><strong>Detalhes nutricionais</strong>: Informações completas de cada dia</li>
+<li><strong>Lista de ingredientes</strong>: Todos os alimentos utilizados</li>
+<li><strong>Modo de visualização pública</strong>: Interface para consulta dos usuários</li>
+</ul>
+<h3 id="edicao-e-atualizacao">Edição e Atualização</h3>
+<ul>
+<li><strong>Modificação de pratos</strong>: Alteração de receitas em qualquer refeição</li>
+<li><strong>Ajustes nutricionais</strong>: Otimização para atingir metas específicas</li>
+<li><strong>Substituições inteligentes</strong>: Sugestões de alternativas equivalentes</li>
+<li><strong>Versionamento</strong>: Controle de alterações com histórico</li>
+<li><strong>Aprovação</strong>: Sistema de validação por nutricionistas</li>
+</ul>
+<h3 id="clonagem-de-cardapios">Clonagem de Cardápios</h3>
+<ul>
+<li><strong>Duplicação completa</strong>: Cópia de cardápios existentes</li>
+<li><strong>Adaptação de períodos</strong>: Ajuste automático de datas</li>
+<li><strong>Modificações pontuais</strong>: Alterações específicas em cardápios clonados</li>
+<li><strong>Reutilização eficiente</strong>: Aproveitamento de planejamentos anteriores</li>
+<li><strong>Templates</strong>: Criação de modelos reutilizáveis</li>
+</ul>
+<h3 id="relatorios-e-analises">Relatórios e Análises</h3>
+<ul>
+<li><strong>Relatório semanal</strong>: Visão completa do planejamento</li>
+<li><strong>Análise nutricional</strong>: Detalhamento de macro e micronutrientes</li>
+<li><strong>Lista de compras</strong>: Quantidades necessárias de cada ingrediente</li>
+<li><strong>Relatório de custos</strong>: Análise financeira detalhada</li>
+<li><strong>Exportação em PDF</strong>: Documentos prontos para impressão</li>
+</ul>
+<h3 id="compartilhamento">Compartilhamento</h3>
+<ul>
+<li><strong>Links públicos</strong>: URLs para consulta externa</li>
+<li><strong>Visualização sem login</strong>: Acesso público aos cardápios</li>
+<li><strong>QR Codes</strong>: Códigos para acesso rápido via dispositivos móveis</li>
+<li><strong>Integração com murais</strong>: Exibição em totens e painéis digitais</li>
+<li><strong>Notificações</strong>: Alertas sobre novos cardápios disponíveis</li>
+</ul>
+<h3 id="cardapio-do-dia">Cardápio do Dia</h3>
+<ul>
+<li><strong>Destaque especial</strong>: Menu atual em evidência</li>
+<li><strong>Informações imediatas</strong>: Refeições do dia facilmente visíveis</li>
+<li><strong>Status em tempo real</strong>: Atualização automática diária</li>
+<li><strong>Acesso rápido</strong>: Consulta instantânea para usuários</li>
+<li><strong>Detalhes nutricionais</strong>: Informações completas disponíveis</li>
+</ul>
+<h3 id="integracao-com-outros-modulos">Integração com Outros Módulos</h3>
+<ul>
+<li><strong>Alimentos</strong>: Base de dados nutricional completa</li>
+<li><strong>Pratos</strong>: Receitas e preparações cadastradas</li>
+<li><strong>Compras</strong>: Geração automática de listas de ingredientes</li>
+<li><strong>Relatórios</strong>: Análises nutricionais e financeiras</li>
+<li><strong>Usuários</strong>: Controle de acesso e permissões</li>
+</ul>
+<h2 id="beneficios-do-modulo">Benefícios do Módulo</h2>
+<h3 id="eficiencia-no-planejamento">Eficiência no Planejamento</h3>
+<ul>
+<li><strong>Automatização de cálculos</strong>: Valores nutricionais computados automaticamente</li>
+<li><strong>Reutilização inteligente</strong>: Clonagem e adaptação de cardápios existentes</li>
+<li><strong>Validação automática</strong>: Verificação de adequação nutricional</li>
+<li><strong>Processo otimizado</strong>: Fluxo de trabalho simplificado para nutricionistas</li>
+<li><strong>Redução de erros</strong>: Minimização de falhas no planejamento</li>
+</ul>
+<h3 id="controle-nutricional-rigoroso">Controle Nutricional Rigoroso</h3>
+<ul>
+<li><strong>Precisão nos cálculos</strong>: Dados nutricionais confiáveis e atualizados</li>
+<li><strong>Adequação às normas</strong>: Conformidade com diretrizes nutricionais oficiais</li>
+<li><strong>Rastreabilidade completa</strong>: Histórico de todos os planejamentos</li>
+<li><strong>Monitoramento contínuo</strong>: Acompanhamento da qualidade nutricional</li>
+</ul>
+<h3 id="transparencia-e-comunicacao">Transparência e Comunicação</h3>
+<ul>
+<li><strong>Acesso público</strong>: Consulta aberta aos cardápios planejados</li>
+<li><strong>Compartilhamento fácil</strong>: Link público para divulgação</li>
+<li><strong>Informação clara</strong>: Apresentação organizada e compreensível</li>
+<li><strong>Atualização em tempo real</strong>: Informações sempre atualizadas</li>
+</ul>
+<hr>
+<p><strong>Dica:</strong> Utilize a função de clonagem para aproveitar cardápios bem-sucedidos anteriores, fazendo apenas os ajustes necessários. Isso economiza tempo e mantém a qualidade nutricional já validada.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../../js/smooth-scroll.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
