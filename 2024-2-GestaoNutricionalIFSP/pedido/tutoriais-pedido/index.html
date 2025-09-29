@@ -1,0 +1,2265 @@
+<!DOCTYPE html><html lang="pt" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Manual do Sistema de Gestão Nutricional (SGN) 2025">
+      
+      
+      
+      
+        <link rel="prev" href="../pedidos/">
+      
+      
+        <link rel="next" href="../../perfis-usuario/tutoriais-usuarios/">
+      
+      
+      <link rel="icon" href="../../assets/IFLOGO16X16.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Tutoriais: Pedido - Manual • Sistema de Gestão Nutricional</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pedidos" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Manual • Sistema de Gestão Nutricional" class="md-header__button md-logo" aria-label="Manual • Sistema de Gestão Nutricional" data-md-component="logo">
+      
+  <img src="../../assets/IFLOGO.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Manual • Sistema de Gestão Nutricional
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tutoriais: Pedido
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Manual • Sistema de Gestão Nutricional" class="md-nav__button md-logo" aria-label="Manual • Sistema de Gestão Nutricional" data-md-component="logo">
+      
+  <img src="../../assets/IFLOGO.png" alt="logo">
+
+    </a>
+    Manual • Sistema de Gestão Nutricional
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Início
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introducao/introducao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introdução
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Login
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Login
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../login/tutorial-login/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutorial: Efetuar Login
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../login/tutorial-recuperar-senha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutorial: Recuperar Senha
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Alimentos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Alimentos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alimento/alimentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tela Alimentos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alimento/tutoriais-alimento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Alimento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Cardápios
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Cardápios
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cardapio/cardapios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tela Cardápios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cardapio/tutoriais-cardapio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Cardápio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pratos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Pratos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prato/pratos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tela Pratos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prato/tutoriais-prato/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Prato
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7">
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Fornecedores
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Fornecedores
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fornecedor/fornecedores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tela Fornecedores
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fornecedor/tutoriais-fornecedor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Fornecedor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8">
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Produtos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Produtos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../produto/produtos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tela Produtos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../produto/tutoriais-produto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Produto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9">
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Contratos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Contratos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contrato/contratos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tela Contratos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contrato/tutoriais-contrato/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Contrato
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10">
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Empenhos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Empenhos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../empenho/empenhos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tela Empenhos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../empenho/tutoriais-empenho/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Empenho
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pedidos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Pedidos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pedidos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tela Pedidos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Pedido
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais: Pedido
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acoes-principais-barra-superior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ações principais (barra superior)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pré-requisitos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-cadastrar-um-novo-pedido" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como cadastrar um novo Pedido
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-editar-um-registro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como editar um registro
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-visualizar-um-pedido" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como visualizar um pedido
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-imprimir-um-pedido" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como imprimir um pedido
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-registrar-entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como registrar entrega
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-controlar-pagamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como controlar pagamentos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Como controlar pagamentos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lancar-pagamento-individual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lançar Pagamento Individual
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controle-de-pagamentos-por-periodo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controle de Pagamentos por Período
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relatorios-de-pagamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relatórios de Pagamento
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-filtrar-pedidos-por-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como filtrar pedidos por status
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Como filtrar pedidos por status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filtros-rapidos-botoes-superiores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filtros Rápidos (Botões Superiores)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-automaticos-do-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Automáticos do Sistema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-inteligente-de-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cálculo Inteligente de Status
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-excluir-um-registro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como excluir um registro
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gerar-relatorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gerar Relatórios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gerar Relatórios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relatorio-de-entradas-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relatório de Entradas (Principal)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-relatorios-especificos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Relatórios Específicos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatos-de-saida" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formatos de Saída
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-acompanhar-atualizacao-de-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como acompanhar atualização de status
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Como acompanhar atualização de status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atualizacao-automatica-inteligente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atualização Automática Inteligente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controle-manual-de-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controle Manual de Status
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dicas-importantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dicas Importantes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dicas Importantes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-obrigatorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Campos Obrigatórios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-completo-do-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fluxo Completo do Status
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controle-automatico-de-estoque" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controle Automático de Estoque
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-pagamentos-avancado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistema de Pagamentos Avançado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtragem-e-relatorios-inteligentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filtragem e Relatórios Inteligentes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controle-orcamentario-integrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controle Orçamentário Integrado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regras-de-negocio-avancadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regras de Negócio Avançadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integracao-com-outros-modulos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integração com Outros Módulos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boas-praticas-operacionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boas Práticas Operacionais
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12">
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Perfis de Usuário
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Perfis de Usuário
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perfis-usuario/tutoriais-usuarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Perfis: Nutricionistas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acoes-principais-barra-superior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ações principais (barra superior)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pré-requisitos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-cadastrar-um-novo-pedido" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como cadastrar um novo Pedido
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-editar-um-registro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como editar um registro
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-visualizar-um-pedido" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como visualizar um pedido
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-imprimir-um-pedido" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como imprimir um pedido
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-registrar-entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como registrar entrega
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-controlar-pagamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como controlar pagamentos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Como controlar pagamentos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lancar-pagamento-individual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lançar Pagamento Individual
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controle-de-pagamentos-por-periodo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controle de Pagamentos por Período
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relatorios-de-pagamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relatórios de Pagamento
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-filtrar-pedidos-por-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como filtrar pedidos por status
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Como filtrar pedidos por status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filtros-rapidos-botoes-superiores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filtros Rápidos (Botões Superiores)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-automaticos-do-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Automáticos do Sistema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-inteligente-de-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cálculo Inteligente de Status
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-excluir-um-registro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como excluir um registro
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gerar-relatorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gerar Relatórios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gerar Relatórios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relatorio-de-entradas-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relatório de Entradas (Principal)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-relatorios-especificos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Relatórios Específicos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatos-de-saida" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formatos de Saída
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-acompanhar-atualizacao-de-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como acompanhar atualização de status
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Como acompanhar atualização de status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atualizacao-automatica-inteligente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atualização Automática Inteligente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controle-manual-de-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controle Manual de Status
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dicas-importantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dicas Importantes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dicas Importantes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-obrigatorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Campos Obrigatórios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-completo-do-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fluxo Completo do Status
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controle-automatico-de-estoque" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controle Automático de Estoque
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-pagamentos-avancado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistema de Pagamentos Avançado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtragem-e-relatorios-inteligentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filtragem e Relatórios Inteligentes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controle-orcamentario-integrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controle Orçamentário Integrado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regras-de-negocio-avancadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regras de Negócio Avançadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integracao-com-outros-modulos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integração com Outros Módulos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boas-praticas-operacionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boas Práticas Operacionais
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="pedidos">Pedidos</h1>
+<p><strong>Localização</strong>: Menu principal → Prestação de Contas → Pedidos</p>
+<hr>
+<h2 id="visao-geral">Visão Geral</h2>
+<p>Nesta tela você gerencia os pedidos da instituição: cadastrar, editar, visualizar, excluir e gerar relatórios. Os pedidos são solicitações de compra realizadas junto aos <a href="../../fornecedor/tutoriais-fornecedor/">Fornecedores</a>, baseadas nos <a href="../../contrato/tutoriais-contrato/">Contratos</a> vigentes e controladas pelos <a href="../../empenho/tutoriais-empenho/">Empenhos</a> orçamentários.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/telapedido/telapedidos.png" data-desc-position="bottom"><img alt="Tela de Pedidos Cadastrados" src="../../assets/telapedido/telapedidos.png"></a></p>
+<h2 id="acoes-principais-barra-superior">Ações principais (barra superior)</h2>
+<ul>
+<li><strong>Novo Pedido</strong> — abre a janela de cadastro.</li>
+<li><strong>Gerar Relatório</strong> — gera relatório por período ou status.</li>
+<li><strong>Filtros por Status</strong> — botões para filtrar:</li>
+<li><strong>Todos os Pedidos</strong> — visualização completa</li>
+<li><strong>Sem Entrega</strong> — pedidos aguardando recebimento</li>
+<li><strong>Com Entrega</strong> — pedidos já recebidos</li>
+<li><strong>Pagamentos</strong> — controle financeiro dos pedidos</li>
+<li><strong>Campo de pesquisa</strong> (à direita) — pesquisa/filtra os registros por dados do pedido.</li>
+</ul>
+<h2 id="pre-requisitos">Pré-requisitos</h2>
+<p>⚠️ <strong>Importante</strong>: Antes de criar um pedido, você deve ter:
+1. <strong>Fornecedores cadastrados</strong> - Siga o manual de <a href="../../fornecedor/tutoriais-fornecedor/">Fornecedores</a>
+2. <strong>Contratos ativos</strong> - Siga o manual de <a href="../../contrato/tutoriais-contrato/">Contratos</a>
+3. <strong>Empenhos disponíveis</strong> - Siga o manual de <a href="../../empenho/tutoriais-empenho/">Empenhos</a>
+4. <strong>Produtos cadastrados</strong> - Siga o manual de <a href="../../produto/tutoriais-produto/">Produtos</a></p>
+<h2 id="como-cadastrar-um-novo-pedido">Como cadastrar um novo Pedido</h2>
+<ol>
+<li>No menu lateral clique em <strong>Prestação de Contas</strong> → <strong>Pedidos</strong>.</li>
+<li>Clique no botão <strong>Novo Pedido</strong> (barra superior).</li>
+<li>Na janela <strong>Novo Pedido</strong> preencha os campos:</li>
+<li><strong>Número do Pedido</strong> — identificação única da solicitação.</li>
+<li><strong>Data do Pedido</strong> — data de criação da solicitação.</li>
+<li><strong>Fornecedor</strong> — selecione a empresa destinatária no dropdown.</li>
+<li><strong>Nota de Empenho</strong> — selecione o empenho que cobrirá os custos.</li>
+<li><strong>Data de Entrega</strong> — prazo previsto para recebimento.</li>
+<li><strong>Status</strong> — situação atual (Pendente, Enviado, Em Entrega, Entregue, Cancelado).</li>
+<li>
+<p><strong>Itens</strong> — adicione os produtos e quantidades solicitadas.</p>
+</li>
+<li>
+<p>O sistema calculará automaticamente o <strong>Valor Total</strong> baseado nos itens e quantidades.</p>
+</li>
+<li>
+<p>Clique em <strong>Confirmar</strong> para salvar. A janela será fechada e o registro aparecerá na tabela.</p>
+</li>
+</ol>
+<h2 id="como-editar-um-registro">Como editar um registro</h2>
+<ol>
+<li>Localize o pedido na tabela (use a pesquisa se necessário).</li>
+<li>Clique em <strong>Editar</strong> na coluna de Ações da linha desejada.</li>
+<li>A janela abrirá em modo de edição — altere os campos desejados e clique em <strong>Confirmar</strong>.</li>
+<li>⚠️ <strong>Nota</strong>: Apenas pedidos com status "Pendente" podem ser editados.</li>
+</ol>
+<h2 id="como-visualizar-um-pedido">Como visualizar um pedido</h2>
+<ol>
+<li>Na lista, clique em <strong>Visualizar</strong> para abrir os detalhes completos do pedido.</li>
+<li>Você verá todas as informações da solicitação, itens e valores.</li>
+<li>Para fechar, clique em <strong>Cancelar</strong> ou no botão de fechar da janela.</li>
+</ol>
+<h2 id="como-imprimir-um-pedido">Como imprimir um pedido</h2>
+<ol>
+<li>Clique em <strong>Imprimir</strong> (ícone de impressora) na coluna Ações da linha desejada.</li>
+<li>O sistema gerará o documento do pedido para impressão ou download.</li>
+</ol>
+<h2 id="como-registrar-entrega">Como registrar entrega</h2>
+<ol>
+<li><strong>Localizar Pedido</strong>: Na lista, clique em <strong>Registrar Entrega</strong> na coluna Ações.</li>
+<li><strong>Dados de Recebimento</strong>:</li>
+<li><strong>Data da Entrega</strong>: Data em que os produtos foram recebidos</li>
+<li><strong>Quantidade Entregue</strong>: Quantidade efetivamente recebida por item</li>
+<li>
+<p><strong>Observações</strong>: Anotações sobre a condição dos produtos</p>
+</li>
+<li>
+<p><strong>Atualização Automática do Status</strong>:</p>
+</li>
+<li><strong>Entregue Completo</strong>: Quando quantidade entregue = quantidade pedida</li>
+<li><strong>Parcialmente Entregue</strong>: Quando quantidade entregue &lt; quantidade pedida</li>
+<li>
+<p><strong>Aguardando Entrega</strong>: Quando nenhuma quantidade foi entregue</p>
+</li>
+<li>
+<p><strong>Controle de Estoque</strong>: Sistema atualiza automaticamente:</p>
+</li>
+<li>Adiciona quantidade entregue ao estoque do produto</li>
+<li>Calcula saldo disponível para novos pedidos</li>
+<li>
+<p>Registra movimentação de entrada no histórico</p>
+</li>
+<li>
+<p><strong>Validações</strong>:</p>
+</li>
+<li>Quantidade entregue não pode ser negativa</li>
+<li>Data de entrega não pode ser futura</li>
+<li>Sistema permite entregas parciais múltiplas</li>
+</ol>
+<h2 id="como-controlar-pagamentos">Como controlar pagamentos</h2>
+<h3 id="lancar-pagamento-individual"><strong>Lançar Pagamento Individual</strong></h3>
+<ol>
+<li><strong>Acessar</strong>: Clique em <strong>Pagamentos</strong> na coluna Ações do pedido entregue.</li>
+<li><strong>Dados do Pagamento</strong>:</li>
+<li><strong>Mês de Referência</strong>: Mês ao qual se refere o pagamento</li>
+<li><strong>Ano de Referência</strong>: Ano de competência</li>
+<li><strong>Número do Contrato</strong>: Contrato vinculado ao pedido</li>
+<li>
+<p><strong>Data do Pagamento</strong>: Automaticamente definida como hoje</p>
+</li>
+<li>
+<p><strong>Processo Automático</strong>:</p>
+</li>
+<li>Sistema cria registro de pagamento no contrato</li>
+<li>Atualiza status do pedido para "Finalizado"</li>
+<li>Vincula pagamento ao pedido permanentemente</li>
+<li>Calcula valor total baseado nos itens entregues</li>
+</ol>
+<h3 id="controle-de-pagamentos-por-periodo"><strong>Controle de Pagamentos por Período</strong></h3>
+<ol>
+<li><strong>Filtro Avançado</strong>: Use o botão <strong>Pagamentos</strong> na barra superior</li>
+<li><strong>Visualização Específica</strong>:</li>
+<li>Pedidos com entregas realizadas</li>
+<li>Sem pagamento ainda lançado</li>
+<li>Ordenados por data de entrega</li>
+<li>Valores totais calculados automaticamente</li>
+</ol>
+<h3 id="relatorios-de-pagamento"><strong>Relatórios de Pagamento</strong></h3>
+<ol>
+<li><strong>Pagamentos do Dia</strong>: Visualizar pagamentos lançados hoje</li>
+<li><strong>Pagamentos por Período</strong>: Filtrar por intervalo de datas</li>
+<li><strong>Pagamentos Pendentes</strong>: Entregas sem pagamento registrado</li>
+<li><strong>Controle Orçamentário</strong>: Acompanhar gastos por contrato/empenho</li>
+</ol>
+<h2 id="como-filtrar-pedidos-por-status">Como filtrar pedidos por status</h2>
+<h3 id="filtros-rapidos-botoes-superiores"><strong>Filtros Rápidos (Botões Superiores)</strong></h3>
+<ol>
+<li><strong>Todos os Pedidos</strong>: Visualização completa de todos os registros</li>
+<li><strong>Sem Entrega</strong>: Pedidos que ainda não receberam produtos</li>
+<li><strong>Com Entrega</strong>: Pedidos que já tiveram produtos recebidos  </li>
+<li><strong>Para Pagamento</strong>: Pedidos entregues disponíveis para pagamento</li>
+</ol>
+<h3 id="status-automaticos-do-sistema"><strong>Status Automáticos do Sistema</strong></h3>
+<ul>
+<li><strong>Aguardando Entrega</strong>: Nenhum produto foi recebido ainda</li>
+<li><strong>Parcialmente Entregue</strong>: Alguns itens recebidos, outros pendentes</li>
+<li><strong>Entregue</strong>: Todos os itens recebidos conforme pedido</li>
+<li><strong>Finalizado</strong>: Entregue e com pagamento lançado</li>
+</ul>
+<h3 id="calculo-inteligente-de-status"><strong>Cálculo Inteligente de Status</strong></h3>
+<ul>
+<li>Sistema compara quantidade pedida vs entregue automaticamente</li>
+<li>Status é atualizado em tempo real após cada registro de entrega</li>
+<li>Cores visuais facilitam identificação rápida: vermelho (pendente), laranja (parcial), verde (completo)</li>
+</ul>
+<h2 id="como-excluir-um-registro">Como excluir um registro</h2>
+<ol>
+<li>Clique em <strong>Excluir</strong> (ícone de lixeira) na coluna Ações da linha correspondente.</li>
+<li>Confirme a exclusão clicando em <strong>Confirmar</strong> no diálogo de confirmação.</li>
+<li>⚠️ <strong>Atenção</strong>: Apenas pedidos com status "Pendente" podem ser excluídos.</li>
+</ol>
+<h2 id="gerar-relatorios">Gerar Relatórios</h2>
+<h3 id="relatorio-de-entradas-principal"><strong>Relatório de Entradas (Principal)</strong></h3>
+<ol>
+<li><strong>Acessar</strong>: Clique em <strong>Gerar Relatório</strong> na barra superior</li>
+<li><strong>Filtros Disponíveis</strong>:</li>
+<li><strong>Período</strong>: Selecionar intervalo de datas</li>
+<li><strong>Status</strong>: Filtrar por tipo de pedido</li>
+<li><strong>Fornecedor</strong>: Relatório específico de um fornecedor</li>
+<li>
+<p><strong>Contrato</strong>: Agrupar por contrato específico</p>
+</li>
+<li>
+<p><strong>Informações Incluídas</strong>:</p>
+</li>
+<li>ID do pedido e data de criação</li>
+<li>Fornecedor e dados de contato</li>
+<li>Produtos, quantidades e valores</li>
+<li>Status de entrega e pagamento</li>
+<li>Datas de entrega e pagamento</li>
+<li>Totais por período</li>
+</ol>
+<h3 id="tipos-de-relatorios-especificos"><strong>Tipos de Relatórios Específicos</strong></h3>
+<ul>
+<li><strong>Pedidos Entregues</strong>: Apenas com entregas confirmadas</li>
+<li><strong>Pedidos Pagos</strong>: Controle financeiro completo</li>
+<li><strong>Pedidos Pendentes</strong>: Aguardando ação</li>
+<li><strong>Movimentação de Estoque</strong>: Entradas por produto</li>
+<li><strong>Controle Orçamentário</strong>: Gastos por empenho/contrato</li>
+</ul>
+<h3 id="formatos-de-saida"><strong>Formatos de Saída</strong></h3>
+<ul>
+<li><strong>PDF</strong>: Para impressão e arquivo</li>
+<li><strong>Excel</strong>: Para análises avançadas</li>
+<li><strong>Tela</strong>: Visualização rápida</li>
+</ul>
+<h2 id="como-acompanhar-atualizacao-de-status">Como acompanhar atualização de status</h2>
+<h3 id="atualizacao-automatica-inteligente"><strong>Atualização Automática Inteligente</strong></h3>
+<ol>
+<li><strong>Trigger de Entrega</strong>: Status é recalculado automaticamente a cada registro de entrega</li>
+<li><strong>Cálculo dinâmico</strong>:</li>
+<li>Sistema compara <code>quantidade_entregue</code> vs <code>quantidade_pedido</code> para cada item</li>
+<li>Analisa se há entregas parciais em qualquer item</li>
+<li>
+<p>Define status baseado na situação geral do pedido</p>
+</li>
+<li>
+<p><strong>Lógica de Status</strong>:
+   <code>Se nenhum item tem entrega → "Aguardando Entrega" 
+   Se todos itens entregues completos → "Entregue"
+   Se entregas parciais ou mistas → "Parcialmente Entregue"
+   Se pagamento lançado → "Finalizado"</code></p>
+</li>
+<li>
+<p><strong>Indicação Visual</strong>: Cores diferenciadas facilitam identificação rápida do status</p>
+</li>
+</ol>
+<h3 id="controle-manual-de-status"><strong>Controle Manual de Status</strong></h3>
+<p>Em casos especiais, use o endpoint <code>/pedido/{id}/atualizarStatus</code> para forçar recalculo</p>
+<hr>
+<h2 id="dicas-importantes">Dicas Importantes</h2>
+<h3 id="campos-obrigatorios"><strong>Campos Obrigatórios</strong></h3>
+<ul>
+<li><strong>Número do Pedido</strong>: Deve ser único no sistema</li>
+<li><strong>Fornecedor</strong>: Deve ter contrato ativo</li>
+<li><strong>Nota de Empenho</strong>: Deve ter saldo disponível</li>
+<li><strong>Data de Entrega</strong>: Deve ser futura</li>
+<li><strong>Pelo menos um item</strong>: Com produto e quantidade</li>
+</ul>
+<h3 id="fluxo-completo-do-status"><strong>Fluxo Completo do Status</strong></h3>
+<ul>
+<li><strong>Pendente</strong> → Recém-criado, pode ser editado ou excluído</li>
+<li><strong>Aguardando Entrega</strong> → Criado mas sem entregas registradas</li>
+<li><strong>Parcialmente Entregue</strong> → Algumas entregas realizadas, outras pendentes</li>
+<li><strong>Entregue</strong> → Todas as quantidades recebidas conforme pedido</li>
+<li><strong>Finalizado</strong> → Entregue e com pagamento lançado (status final)</li>
+</ul>
+<h3 id="controle-automatico-de-estoque"><strong>Controle Automático de Estoque</strong></h3>
+<ul>
+<li><strong>Entrada Automática</strong>: Produtos são adicionados ao estoque quando entrega é registrada</li>
+<li><strong>Quantidade Acumulativa</strong>: Sistema soma entregas parciais múltiplas</li>
+<li><strong>Rastreabilidade</strong>: Mantém histórico completo de movimentações</li>
+<li><strong>Integração</strong>: Estoque é atualizado automaticamente sem intervenção manual</li>
+</ul>
+<h3 id="sistema-de-pagamentos-avancado"><strong>Sistema de Pagamentos Avançado</strong></h3>
+<ul>
+<li><strong>Vinculação Automática</strong>: Pagamentos são associados automaticamente aos contratos</li>
+<li><strong>Cálculo Preciso</strong>: Valor baseado exatamente nas quantidades entregues</li>
+<li><strong>Controle Temporal</strong>: Mês/ano de referência para organização contábil</li>
+<li><strong>Status Final</strong>: Pedido é marcado como "Finalizado" após pagamento</li>
+</ul>
+<h3 id="filtragem-e-relatorios-inteligentes"><strong>Filtragem e Relatórios Inteligentes</strong></h3>
+<ul>
+<li><strong>Filtros Dinâmicos</strong>: Botões rápidos para diferentes visualizações</li>
+<li><strong>Consultas Específicas</strong>: Pedidos por período, status ou fornecedor</li>
+<li><strong>Relatórios Automáticos</strong>: Geração instantânea com dados atualizados</li>
+<li><strong>Formatos Múltiplos</strong>: PDF para arquivo, Excel para análise</li>
+</ul>
+<h3 id="controle-orcamentario-integrado"><strong>Controle Orçamentário Integrado</strong></h3>
+<ul>
+<li><strong>Reserva Automática</strong>: Valor comprometido no empenho ao criar pedido</li>
+<li><strong>Validação Prévia</strong>: Sistema impede pedidos acima do saldo disponível</li>
+<li><strong>Atualização Simultânea</strong>: Saldos atualizados em tempo real</li>
+<li><strong>Rastreamento Completo</strong>: Valor empenhado vs utilizado vs pago</li>
+</ul>
+<h3 id="regras-de-negocio-avancadas"><strong>Regras de Negócio Avançadas</strong></h3>
+<ul>
+<li><strong>Entregas Parciais</strong>: Sistema permite e controla entregas fracionadas</li>
+<li><strong>Validação de Datas</strong>: Entregas não podem ter data futura</li>
+<li><strong>Quantidades Flexíveis</strong>: Permite entrega menor ou maior que pedido</li>
+<li><strong>Bloqueios Inteligentes</strong>: Impede edição/exclusão quando há movimentação</li>
+</ul>
+<h3 id="integracao-com-outros-modulos"><strong>Integração com Outros Módulos</strong></h3>
+<ul>
+<li><strong>Fornecedores</strong>: Apenas com contratos ativos aparecem na lista</li>
+<li><strong>Contratos</strong>: Valida vigência e produtos disponíveis</li>
+<li><strong>Empenhos</strong>: Controla saldo orçamentário automaticamente</li>
+<li><strong>Produtos</strong>: Atualiza estoque e movimentações em tempo real</li>
+</ul>
+<h3 id="boas-praticas-operacionais"><strong>Boas Práticas Operacionais</strong></h3>
+<ul>
+<li><strong>Planejamento</strong>: Verifique contratos e empenhos antes de criar pedidos</li>
+<li><strong>Acompanhamento</strong>: Monitore status e registre entregas prontamente</li>
+<li><strong>Controle</strong>: Use filtros para acompanhar pedidos por fase</li>
+<li><strong>Documentação</strong>: Gere relatórios regulares para controle gerencial</li>
+<li><strong>Pagamentos</strong>: Lance pagamentos assim que entregas forem confirmadas</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../../js/smooth-scroll.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

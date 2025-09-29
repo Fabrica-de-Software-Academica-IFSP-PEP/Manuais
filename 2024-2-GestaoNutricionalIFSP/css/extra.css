@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Favicon optimization */
+link[rel="icon"] {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+/* Garantir que a fonte Montserrat seja aplicada globalmente com fallbacks robustos */
+body, 
+.md-typeset,
+.md-content,
+* {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Forçar carregamento da fonte com font-display */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.woff2') format('woff2');
+}
+
+.md-footer {
+  display: none !important;
+}
+
+.md-header {
+  background-color: #52b355 !important;
+}
+
+.md-header__button.md-logo img,
+.md-logo img,
+img[src*="SGNLOGO.png"],
+img[src*="assets/SGNLOGO.png"] {
+  filter: 
+    drop-shadow(1px 0px 0px white)
+    drop-shadow(-1px 0px 0px white)
+    drop-shadow(0px 1px 0px white)
+    drop-shadow(0px -1px 0px white)
+    drop-shadow(1px 1px 0px white)
+    drop-shadow(-1px -1px 0px white)
+    drop-shadow(1px -1px 0px white)
+    drop-shadow(-1px 1px 0px white) !important;
+  width: 30px !important;
+  height: auto !important;
+  padding: 1px !important;
+}
+
+/* Estilos específicos para cada nível de cabeçalho com diferentes pesos da Montserrat */
+/* Usando seletores mais específicos e !important para sobrescrever o tema Material */
+
+.md-content h1, 
+article h1, 
+h1 {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 900 !important; /* Black */
+    font-style: normal !important;
+    color: #000000 !important; /* Preto no tema claro */
+}
+
+.md-content h2, 
+article h2, 
+h2 {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 800 !important; /* Extra Bold */
+    font-style: normal !important;
+    color: #1a1a1a !important; /* Quase preto no tema claro */
+}
+
+.md-content h3, 
+article h3, 
+h3 {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 700 !important; /* Bold */
+    font-style: normal !important;
+    color: #2a2a2a !important; /* Cinza escuro no tema claro */
+}
+
+.md-content h4, 
+article h4, 
+h4 {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 600 !important; /* Semi Bold */
+    font-style: normal !important;
+    color: #3a3a3a !important; /* Cinza médio-escuro no tema claro */
+}
+
+.md-content h5, 
+article h5, 
+h5 {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 500 !important; /* Medium */
+    font-style: normal !important;
+    color: #4a4a4a !important; /* Cinza médio no tema claro */
+}
+
+.md-content h6, 
+article h6, 
+h6 {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 400 !important; /* Regular */
+    font-style: normal !important;
+    color: #5a5a5a !important; /* Cinza mais claro no tema claro */
+}
+
+/* Cores específicas para o tema escuro (slate) */
+[data-md-color-scheme="slate"] .md-content h1, 
+[data-md-color-scheme="slate"] article h1, 
+[data-md-color-scheme="slate"] h1 {
+    color: #ffffff !important; /* Branco no tema escuro */
+}
+
+[data-md-color-scheme="slate"] .md-content h2, 
+[data-md-color-scheme="slate"] article h2, 
+[data-md-color-scheme="slate"] h2 {
+    color: #f0f0f0 !important; /* Quase branco no tema escuro */
+}
+
+[data-md-color-scheme="slate"] .md-content h3, 
+[data-md-color-scheme="slate"] article h3, 
+[data-md-color-scheme="slate"] h3 {
+    color: #e0e0e0 !important; /* Cinza claro no tema escuro */
+}
+
+[data-md-color-scheme="slate"] .md-content h4, 
+[data-md-color-scheme="slate"] article h4, 
+[data-md-color-scheme="slate"] h4 {
+    color: #d0d0d0 !important; /* Cinza médio-claro no tema escuro */
+}
+
+[data-md-color-scheme="slate"] .md-content h5, 
+[data-md-color-scheme="slate"] article h5, 
+[data-md-color-scheme="slate"] h5 {
+    color: #c0c0c0 !important; /* Cinza médio no tema escuro */
+}
+
+[data-md-color-scheme="slate"] .md-content h6, 
+[data-md-color-scheme="slate"] article h6, 
+[data-md-color-scheme="slate"] h6 {
+    color: #b0b0b0 !important; /* Cinza mais escuro no tema escuro */
+}
+
+/* Justificação de texto para parágrafos - deixar alinhado como no Word */
+.md-content p,
+article p,
+p {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    line-height: 1.6 !important; /* Melhor legibilidade */
+    hyphens: auto !important; /* Hifenização automática */
+    -webkit-hyphens: auto !important;
+    -moz-hyphens: auto !important;
+    -ms-hyphens: auto !important;
+}
+
+/* Estilos para o Table of Contents (TOC) */
+.md-sidebar--secondary {
+  position: sticky;
+  top: 4rem;
+}
+
+.md-nav--secondary .md-nav__title {
+  font-weight: 700;
+  color: #52b355;
+  border-bottom: 2px solid #52b355;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.md-nav--secondary .md-nav__link {
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+  margin: 0.2rem 0;
+}
+
+.md-nav--secondary .md-nav__link:hover {
+  background-color: rgba(82, 179, 85, 0.1);
+  color: #52b355;
+  transform: translateX(4px);
+}
+
+.md-nav--secondary .md-nav__link--active {
+  background-color: rgba(82, 179, 85, 0.15);
+  color: #52b355;
+  font-weight: 600;
+  border-left: 3px solid #52b355;
+}
+
+/* Smooth scrolling aprimorado para âncoras */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px; /* Offset para header fixo */
+}
+
+/* Scroll suave mais lento e personalizado */
+html, body {
+  scroll-behavior: smooth;
+}
+
+/* Garantir que todos os elementos tenham scroll suave */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Links de âncora com scroll ultra suave */
+a[href^="#"] {
+  scroll-behavior: smooth;
+}
+
+/* Para navegadores Webkit - scroll mais suave */
+@supports (scroll-behavior: smooth) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Scroll personalizado com CSS animations para ser mais suave */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Transição suave para elementos com âncora */
+  :target {
+    scroll-margin-top: 120px;
+    animation: smoothScroll 1.5s ease-in-out;
+  }
+}
+
+@keyframes smoothScroll {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CSS personalizado para scroll mais suave em navegadores que suportam */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .md-nav__link[href^="#"] {
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}
+
+/* Destaque dos cabeçalhos ao serem clicados com animação mais suave */
+h1:target, h2:target, h3:target, h4:target, h5:target, h6:target {
+  animation: highlight 3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  scroll-margin-top: 100px; /* Espaço do topo ao fazer scroll para o elemento */
+}
+
+@keyframes highlight {
+  0% { 
+    background-color: rgba(82, 179, 85, 0.4);
+    box-shadow: 0 0 0 4px rgba(82, 179, 85, 0.2);
+    transform: scale(1.02);
+  }
+  50% {
+    background-color: rgba(82, 179, 85, 0.2);
+    box-shadow: 0 0 0 2px rgba(82, 179, 85, 0.1);
+  }
+  100% { 
+    background-color: transparent;
+    box-shadow: none;
+    transform: scale(1);
+  }
+}
+
+/* Aprimorar o comportamento de hover nos links do TOC */
+.md-nav--secondary .md-nav__link {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem 0;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Estilo para link ativo durante scroll */
+.md-nav--secondary .md-nav__link.active-scroll {
+  background-color: rgba(82, 179, 85, 0.25) !important;
+  color: #52b355 !important;
+  transform: translateX(4px);
+  box-shadow: 0 2px 12px rgba(82, 179, 85, 0.3);
+}
+
+.md-nav--secondary .md-nav__link:hover {
+  background-color: rgba(82, 179, 85, 0.12);
+  color: #52b355;
+  transform: translateX(6px);
+  box-shadow: 0 2px 8px rgba(82, 179, 85, 0.15);
+}
+
+/* Indicador visual para o link ativo no TOC */
+.md-nav--secondary .md-nav__link--active {
+  background-color: rgba(82, 179, 85, 0.18);
+  color: #52b355;
+  font-weight: 600;
+  border-left: 4px solid #52b355;
+  transform: translateX(2px);
+  box-shadow: 0 1px 3px rgba(82, 179, 85, 0.2);
+}
+
+/* Efeito de pulse no link ativo */
+.md-nav--secondary .md-nav__link--active::before {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #52b355;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-50%) scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+}
