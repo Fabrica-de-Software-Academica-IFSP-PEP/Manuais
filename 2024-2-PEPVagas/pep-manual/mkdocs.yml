@@ -1,0 +1,28 @@
+site_name: Manual do Usuário - PEPVagas
+
+theme:
+  name: material
+  language: pt
+  palette:
+    - scheme: default
+      primary: green   # Links e destaques principais em verde
+      accent: indigo
+    - scheme: slate
+      primary: green
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Modo Noturno
+  custom_dir: docs/overrides   # para CSS personalizado
+
+extra_css:
+  - extra.css   # arquivo onde definimos os links verdes
+
+nav:
+  - Início: index.md
+  - Candidato: candidato.md
+  - Empresa: empresa.md
+  - Representante: representante.md
+  - Profissional Liberal: profissional-liberal.md
+  - Membro de Equipe: membro-de-equipe.md
+  - Administrador: administrador.md
