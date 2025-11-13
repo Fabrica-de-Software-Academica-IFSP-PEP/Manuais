@@ -22,11 +22,11 @@ Este perfil é ideal para **colaboradores internos da PEPVagas** que precisam ac
 ## Login
 Para acessar a conta de **Membro de Equipe**, clique no botão **Entrar** no canto superior direito da tela.  
 <p align="center">
-  <img src="/imagens/candidato/login_entrar.png" alt="Logar no sistema">
+  <img src="imagens/candidato/login_entrar.png" alt="Logar no sistema">
 </p>
 Informe o **e-mail** e **senha** fornecidos pelo Administrador e clique em **Entrar**.
 <p align="center">
-  <img src="/imagens/candidato/login_sistema.png" alt="Logar no sistema">
+  <img src="imagens/candidato/login_sistema.png" alt="Logar no sistema">
 </p>
 
 ---
@@ -35,37 +35,37 @@ Informe o **e-mail** e **senha** fornecidos pelo Administrador e clique em **Ent
 No canto superior direito, clique no **Menu** para acessar as funcionalidades:  
 
 <p align="center">
-  <img src="/imagens/membro_equipe/menu.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/menu.png" alt="Logar no sistema">
 </p>
 
 - **Home** – tela inicial com listagem de todas as vagas publicadas.  
 <p align="center">
-  <img src="/imagens/membro_equipe/home.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/home.png" alt="Logar no sistema">
 </p>
 
 - **Publicar Vaga** – criação de novas vagas para qualquer empresa.  
 <p align="center">
-  <img src="/imagens/membro_equipe/cadastrodevaga.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/cadastrodevaga.png" alt="Logar no sistema">
 </p>
 
 - **Minhas Vagas** – gerenciamento das vagas criadas pelo próprio membro.  
 <p align="center">
-  <img src="/imagens/membro_equipe/minhasvagas1.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/minhasvagas1.png" alt="Logar no sistema">
 </p>
 
 - **Profissionais Liberais** – visualização e pesquisa de profissionais liberais cadastrados.  
 <p align="center">
-  <img src="/imagens/membro_equipe/listaprofissionais.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/listaprofissionais.png" alt="Logar no sistema">
 </p>
 
 - **Tipos de Serviço** – gerenciamento das categorias de serviços disponíveis.  
 <p align="center">
-  <img src="/imagens/membro_equipe/tiposservicos.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/tiposservicos.png" alt="Logar no sistema">
 </p>
 
 - **Perfil** – gerenciamento das informações pessoais e de acesso.  
 <p align="center">
-  <img src="/imagens/membro_equipe/membro.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/membro.png" alt="Logar no sistema">
 </p>
 
 - **Sair** – encerra a sessão e retorna à tela de login.  
@@ -79,13 +79,13 @@ Na tela inicial, o Membro de Equipe pode:
 
 - **Visualizar todas as vagas** publicadas na plataforma.  
 <p align="center">
-  <img src="/imagens/membro_equipe/home.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/home.png" alt="Logar no sistema">
 </p>
 
 - Consultar detalhes das vagas para acompanhamento e análise.  
 
 <p align="center">
-  <img src="/imagens/membro_equipe/visualizarvaga.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/visualizarvaga.png" alt="Logar no sistema">
 </p>
 
 ---
@@ -99,13 +99,13 @@ O Membro de Equipe pode criar vagas para qualquer empresa cadastrada.
 
 Clique em **Publicar Vaga** no menu.  
 <p align="center">
-  <img src="/imagens/membro_equipe/publicarvaga.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/publicarvaga.png" alt="Logar no sistema">
 </p>
 
 Preencha os campos obrigatórios: Título, Salário, Descrição, Turno, Regime, Modalidade, Área, Cidade, Nível de Instrução, PCD, Data de Encerramento, E-mail para recebimento de currículos.  
 
 <p align="center">
-  <img src="/imagens/empresa/perfil.png" alt="Logar no sistema">
+  <img src="imagens/empresa/perfil.png" alt="Logar no sistema">
 </p>
 
 Preencha campos opcionais: Site da empresa/vaga, Logo, Banner de divulgação.  
@@ -118,13 +118,13 @@ Clique em **Publicar Vaga**.
 (Menu → **Minhas Vagas**)  
 
 <p align="center">
-  <img src="/imagens/membro_equipe/minhasvagas.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/minhasvagas.png" alt="Logar no sistema">
 </p>
 
 Após clicar em "MINHAS VAGAS" no menu, essa tela é aberta:
 
 <p align="center">
-  <img src="/imagens/empresa/telahome.png" alt="Logar no sistema">
+  <img src="imagens/empresa/telahome.png" alt="Logar no sistema">
 </p>
 
 Aqui, o Membro de Equipe gerencia suas vagas publicadas: 
@@ -132,19 +132,19 @@ Aqui, o Membro de Equipe gerencia suas vagas publicadas:
 Os botões de ações disponíveis:
 
 <p align="center">
-  <img src="/imagens/empresa/editarvaga.png" alt="Logar no sistema">
+  <img src="imagens/empresa/editarvaga.png" alt="Logar no sistema">
 </p> 
 
 - **Visualizar:** acessar detalhes da publicação. 
    Ao clicar no botão “Visualizar”, a página com as informações completas da vaga será aberta:
    <p align="center">
-  <img src="/imagens/empresa/visualizarvaga.png" alt="Logar no sistema">
+  <img src="imagens/empresa/visualizarvaga.png" alt="Logar no sistema">
 </p>
 
 - **Editar:** alterar informações da vaga.  
 Ao clicar no botão “Editar”, a página com os dados completos da vaga para alteração será aberta:
    <p align="center">
-     <img src="/imagens/empresa/alterarvaga.png" alt="Logar no sistema">
+     <img src="imagens/empresa/alterarvaga.png" alt="Logar no sistema">
    </p>  
 
 - **Excluir:** remover a vaga do sistema.  
@@ -157,19 +157,19 @@ Ao clicar no botão “Editar”, a página com os dados completos da vaga para 
 (Menu → **Profissionais Liberais/autonômos**)  
 
 <p align="center">
-  <img src="/imagens/membro_equipe/visualizarprofissionais.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/visualizarprofissionais.png" alt="Logar no sistema">
 </p>
 
 O Membro de Equipe pode:
 
 - **Visualizar todos os profissionais liberais** cadastrados. 
 <p align="center">
-  <img src="/imagens/membro_equipe/listaprofissionais.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/listaprofissionais.png" alt="Logar no sistema">
 </p>
 
 - **Visualizar dados dos profissionais liberais** cadastrados. 
 <p align="center">
-  <img src="/imagens/membro_equipe/listaprofissional.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/listaprofissional.png" alt="Logar no sistema">
 </p>
 
 ---
@@ -178,14 +178,14 @@ O Membro de Equipe pode:
 (Menu → **Tipos de Serviço**) 
 
 <p align="center">
-  <img src="/imagens/membro_equipe/tiposdeservicos.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/tiposdeservicos.png" alt="Logar no sistema">
 </p>
 
 O Membro de Equipe pode:
 
 - **Visualizar** todos os tipos de serviço cadastrados.  
 <p align="center">
-  <img src="/imagens/membro_equipe/tiposservicos.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/tiposservicos.png" alt="Logar no sistema">
 </p>
 
 - **Cadastrar** novos tipos de serviço.  
@@ -193,7 +193,7 @@ O Membro de Equipe pode:
 - **Excluir** tipos de serviço, se necessário. 
 
 <p align="center">
-  <img src="/imagens/membro_equipe/listaservico.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/listaservico.png" alt="Logar no sistema">
 </p>
 
 ---
@@ -204,12 +204,12 @@ O Membro de Equipe pode:
 O Membro de Equipe pode gerenciar suas informações de acesso e dados pessoais.
 
 <p align="center">
-  <img src="/imagens/membro_equipe/perfilmembro.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/perfilmembro.png" alt="Logar no sistema">
 </p>
 
 Após clicar em "PERFIL" no menu, essa tela é aberta:
  <p align="center">
-  <img src="/imagens/membro_equipe/alterarperfil.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/alterarperfil.png" alt="Logar no sistema">
 </p>
 
 **Alterar Nome**
@@ -219,7 +219,7 @@ Após clicar em "PERFIL" no menu, essa tela é aberta:
 - Clique em **Enviar** (canto superior direito). 
 
  <p align="center">
-  <img src="/imagens/membro_equipe/alterarnome.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/alterarnome.png" alt="Logar no sistema">
 </p>
 
 **Alterar Senha**
@@ -232,7 +232,7 @@ Após clicar em "PERFIL" no menu, essa tela é aberta:
 - Clique em **Enviar** (canto superior direito).  
 
 <p align="center">
-  <img src="/imagens/membro_equipe/alterarsenha.png" alt="Logar no sistema">
+  <img src="imagens/membro_equipe/alterarsenha.png" alt="Logar no sistema">
 </p>
 
 ---

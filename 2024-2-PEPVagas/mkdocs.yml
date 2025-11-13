@@ -1,11 +1,13 @@
 site_name: Manual do Usuário - PEPVagas
+docs_dir: conteudo 
+site_dir: site 
 
 theme:
   name: material
   language: pt
   palette:
     - scheme: default
-      primary: green   # Links e destaques principais em verde
+      primary: green   
       accent: indigo
     - scheme: slate
       primary: green
@@ -13,10 +15,6 @@ theme:
       toggle:
         icon: material/weather-night
         name: Modo Noturno
-  custom_dir: docs/overrides   # para CSS personalizado
-
-extra_css:
-  - extra.css   # arquivo onde definimos os links verdes
 
 nav:
   - Início: index.md
