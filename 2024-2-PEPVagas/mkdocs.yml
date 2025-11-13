@@ -1,4 +1,6 @@
 site_name: Manual do Usuário - PEPVagas
+site_url: https://fabrica-de-software-academica-ifsp-pep.github.io/Manuais/2024-2-PEPVagas/
+use_directory_urls: false  
 docs_dir: conteudo 
 site_dir: site 
 

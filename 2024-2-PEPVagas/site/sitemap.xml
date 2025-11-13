@@ -1,3 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://fabrica-de-software-academica-ifsp-pep.github.io/Manuais/2024-2-PEPVagas/index.html</loc>
+         <lastmod>2025-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://fabrica-de-software-academica-ifsp-pep.github.io/Manuais/2024-2-PEPVagas/administrador.html</loc>
+         <lastmod>2025-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://fabrica-de-software-academica-ifsp-pep.github.io/Manuais/2024-2-PEPVagas/candidato.html</loc>
+         <lastmod>2025-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://fabrica-de-software-academica-ifsp-pep.github.io/Manuais/2024-2-PEPVagas/empresa.html</loc>
+         <lastmod>2025-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://fabrica-de-software-academica-ifsp-pep.github.io/Manuais/2024-2-PEPVagas/membro-de-equipe.html</loc>
+         <lastmod>2025-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://fabrica-de-software-academica-ifsp-pep.github.io/Manuais/2024-2-PEPVagas/profissional-liberal.html</loc>
+         <lastmod>2025-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://fabrica-de-software-academica-ifsp-pep.github.io/Manuais/2024-2-PEPVagas/representante.html</loc>
+         <lastmod>2025-11-13</lastmod>
+    </url>
 </urlset>
