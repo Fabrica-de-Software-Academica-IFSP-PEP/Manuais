@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guias — Recuperar/Alterar Senha - SGRST</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- TOPO -->
+    <header class="topbar">
+        <div class="top-left">
+            <img src="../imagens/logo.jpg" alt="Logo IFSP" class="logo">
+            <button id="menuBtn" class="hamburger" aria-label="Abrir menu">☰</button>
+        </div>
+        <div class="top-right">
+            <button id="darkModeBtn" class="darkmode" aria-label="Ativar modo escuro">🌙</button>
+        </div>
+    </header>
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar closed" id="sidebar" aria-hidden="true">
+        <nav class="side-nav">
+            <a href="../manual/index.html" class="nav-link">Manual</a>
+            <a href="../introducao/index.html" class="nav-link">Introdução</a>
+
+            <!-- Perfis -->
+            <div class="menu-item">
+                <span class="subtitulo">Perfis <span class="material-icons arrow">expand_more</span></span>
+                <div class="submenu">
+                    <a href="../perfis/index.html">Geral</a>
+                    <a href="../perfis/professor/index.html">Professor</a>
+                    <a href="../perfis/coordenador/index.html">Coordenador</a>
+                    <a href="../perfis/cae/index.html">CAE</a>
+                </div>
+            </div>
+
+            <!-- Guias -->
+            <div class="menu-item">
+                <span class="subtitulo">Guias <span class="material-icons arrow">expand_more</span></span>
+                <div class="submenu">
+                    <div class="menu-item">
+                        <span class="subtitulo">Professor <span class="material-icons arrow">expand_more</span></span>
+                        <div class="submenu">
+                            <a href="../perfis/professor/cadastrar-troca.html">Cadastrar Troca de Aulas</a>
+                            <a href="../perfis/professor/listar-troca.html">Gerenciar Trocas de Aulas</a>
+                            <a href="../perfis/professor/horarios-cadastrar.html">Cadastrar Horários</a>
+                            <a href="../perfis/professor/horarios-listar.html">Gerenciar Horários</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <span class="subtitulo">Coordenador <span class="material-icons arrow">expand_more</span></span>
+                        <div class="submenu">
+                            <a href="../perfis/coordenador/cadastrar-troca.html">Cadastrar Troca de Aulas</a>
+                            <a href="../perfis/coordenador/listar-troca.html">Gerenciar Trocas de Aulas</a>
+                            <a href="../perfis/coordenador/disciplinas.html">Disciplinas</a>
+                            <a href="../perfis/coordenador/horarios.html">Horários</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <span class="subtitulo">CAE <span class="material-icons arrow">expand_more</span></span>
+                        <div class="submenu">
+                            <a href="../perfis/cae/cursos.html">Cursos</a>
+                            <a href="../perfis/cae/servidores.html">Servidores</a>
+                            <a href="../perfis/cae/consultar-trocas.html">Consultar Trocas</a>
+                        </div>
+                    </div>
+
+                    <a href="../acesso/login.html">Login</a>
+                    <a href="../acesso/recuperar-alterar-senha.html">Recuperar/Alterar Senha</a>
+                </div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- ÍNDICE -->
+    <aside class="toc" id="page-toc" aria-label="Índice da página">
+        <h3>Índice</h3>
+        <ul id="toc-list">
+            <li><a href="#descricao" class="toc-link">Descrição</a></li>
+            <li><a href="#passo-a-passo" class="toc-link">Passo a passo</a></li>
+            <li><a href="#imagens" class="toc-link">Imagens</a></li>
+        </ul>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main class="content">
+        <h1>🔑 Recuperar / Alterar Senha</h1>
+
+        <section id="descricao">
+            <h2>Descrição</h2>
+            <p>
+                Caso o usuário tenha esquecido sua senha, ele poderá solicitar a recuperação ou alterar a senha já
+                existente.
+                Um e-mail será enviado com instruções para redefinir a senha.
+            </p>
+        </section>
+
+        <section id="passo-a-passo">
+            <h2>Passo a passo</h2>
+            <ol>
+                <li>Acesse a página de login do sistema.</li>
+                <li>Clique em <strong>Esqueceu sua senha?</strong>.</li>
+                <li>Informe seu <strong>e-mail</strong> cadastrado.</li>
+                <li>Clique em <strong>Enviar</strong>.</li>
+                <li>Verifique sua caixa de entrada e siga as instruções recebidas para redefinir a senha.</li>
+            </ol>
+        </section>
+
+        <section id="imagens" style="margin-top:20px">
+            <figure>
+                <img src="../imagens/recuperar-senha.png" alt="Tela de recuperação de senha"
+                    style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:6px">
+                <figcaption>Tela de recuperação de senha do sistema.</figcaption>
+            </figure>
+
+            <figure style="margin-top:20px">
+                <img src="../imagens/recuperar-senha- msgEnviada.png" alt="Mensagem de e-mail enviado"
+                    style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:6px">
+                <figcaption>Mensagem exibida após solicitar a recuperação de senha.</figcaption>
+            </figure>
+        </section>
+
+        <section id="notificacao" style="margin-top:20px">
+            <h2>Notificação do Sistema</h2>
+            <p>
+                Após o envio do e-mail de recuperação, o sistema também gera uma notificação indicando que a solicitação
+                foi processada com sucesso.
+                Esta notificação garante que o usuário saiba que o e-mail foi enviado e que deve seguir os passos
+                recebidos para redefinir a senha.
+            </p>
+            <figure>
+                <img src="../imagens/notificação-recuperarSenha.png" alt="Notificação recuperação de senha"
+                    style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:6px">
+                <figcaption>Exemplo da notificação enviada pelo sistema.</figcaption>
+            </figure>
+            <figure style="margin-top:20px">
+                <img src="../imagens/redefinir-senha.png" alt="Tela de redefinição de senha"
+                    style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:6px">
+                <figcaption>Tela onde o usuário redefine a senha após receber o e-mail.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="page-footer">
+        <p>Desenvolvido por discentes do IFSP - Campus Presidente Epitácio</p>
+        <p>© 2025 IFSP - Campus Presidente Epitácio</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const sidebar = document.getElementById('sidebar');
+        const body = document.body;
+        const headerOffset = 80;
+
+        window.addEventListener('load', () => {
+            sidebar.classList.add('open');
+            body.classList.add('menu-open');
+            sidebar.setAttribute('aria-hidden', false);
+        });
+
+        menuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            body.classList.toggle('menu-open');
+            sidebar.setAttribute('aria-hidden', !sidebar.classList.contains('open'));
+        });
+
+        document.querySelectorAll('.subtitulo').forEach(sub => {
+            sub.addEventListener('click', () => {
+                sub.parentElement.classList.toggle('open');
+            });
+        });
+
+        document.getElementById('darkModeBtn').addEventListener('click', () => {
+            body.classList.toggle('dark');
+        });
+
+        document.querySelectorAll('.toc a').forEach(a => {
+            a.addEventListener('click', (e) => {
+                e.preventDefault();
+                const el = document.querySelector(a.getAttribute('href'));
+                const topPos = el.getBoundingClientRect().top + window.scrollY - headerOffset;
+                window.scrollTo({ top: topPos, behavior: 'smooth' });
+                document.querySelectorAll('.toc a').forEach(x => x.classList.remove('active'));
+                a.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

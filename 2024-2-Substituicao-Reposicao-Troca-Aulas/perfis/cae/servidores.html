@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guias — Gerenciar Servidores - SGRST</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- TOPO -->
+    <header class="topbar">
+        <div class="top-left">
+            <img src="../../imagens/logo.jpg" alt="Logo IFSP" class="logo">
+            <button id="menuBtn" class="hamburger" aria-label="Abrir menu">☰</button>
+        </div>
+        <div class="top-right">
+            <button id="darkModeBtn" class="darkmode" aria-label="Ativar modo escuro">🌙</button>
+        </div>
+    </header>
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar closed" id="sidebar" aria-hidden="true">
+        <nav class="side-nav">
+            <a href="../../manual/index.html" class="nav-link">Manual</a>
+            <a href="../../introducao/index.html" class="nav-link">Introdução</a>
+
+            <!-- Perfis -->
+            <div class="menu-item">
+                <span class="subtitulo">Perfis <span class="material-icons arrow">expand_more</span></span>
+                <div class="submenu">
+                    <a href="../index.html">Geral</a>
+                    <a href="../professor/index.html">Professor</a>
+                    <a href="../coordenador/index.html">Coordenador</a>
+                    <a href="index.html" class="active">CAE</a>
+                </div>
+            </div>
+
+            <!-- Guias -->
+            <div class="menu-item">
+                <span class="subtitulo">Guias <span class="material-icons arrow">expand_more</span></span>
+                <div class="submenu">
+
+                    <!-- Guias do Professor -->
+                    <div class="menu-item">
+                        <span class="subtitulo">Professor <span class="material-icons arrow">expand_more</span></span>
+                        <div class="submenu">
+                            <a href="../professor/cadastrar-troca.html">Cadastrar Troca de Aulas</a>
+                            <a href="../professor/listar-troca.html">Gerenciar Trocas de Aulas</a>
+                            <a href="../professor/horarios-cadastrar.html">Cadastrar Horários</a>
+                            <a href="../professor/horarios-listar.html">Gerenciar Horários</a>
+                        </div>
+                    </div>
+
+                    <!-- Guias do Coordenador -->
+                    <div class="menu-item">
+                        <span class="subtitulo">Coordenador <span class="material-icons arrow">expand_more</span></span>
+                        <div class="submenu">
+                            <a href="../coordenador/cadastrar-troca.html">Cadastrar Troca</a>
+                            <a href="../coordenador/listar-troca.html">Gerenciar Trocas</a>
+                            <a href="../coordenador/disciplinas.html">Disciplinas</a>
+                            <a href="../coordenador/horarios.html">Horários</a>
+                        </div>
+                    </div>
+
+                    <!-- Guias da CAE -->
+                    <div class="menu-item">
+                        <span class="subtitulo">CAE <span class="material-icons arrow">expand_more</span></span>
+                        <div class="submenu">
+                            <a href="../cae/consultar-trocas.html">Consultar Trocas</a>
+                            <a href="../cae/cursos.html">Cursos</a>
+                            <a href="../cae/servidores.html">Servidores</a>
+                        </div>
+                    </div>
+
+                    <a href="../../acesso/login.html">Login</a>
+                    <a href="../../acesso/recuperar-alterar-senha.html">Recuperar/Alterar Senha</a>
+                </div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main class="content">
+        <h1>📝 Gerenciar Servidores - CAE</h1>
+
+        <section id="descricao">
+            <h2>Descrição</h2>
+            <p>
+                Nesta página a CAE pode cadastrar, listar, editar e excluir servidores.
+                Cada servidor possui <strong>Nome, Papel, Telefone, E-mail e Senha</strong>.
+            </p>
+        </section>
+
+        <section id="passo-a-passo">
+            <h2>Passo a passo</h2>
+            <ol>
+                <li>No menu lateral, clique em <strong>Cadastrar Servidor</strong>. Preencha os dados obrigatórios e
+                    clique em <strong>Salvar</strong>.</li>
+                <li>Para listar servidores, clique em <strong>Listar Servidor</strong>. Será exibida a lista de
+                    servidores cadastrados.</li>
+                <li>Para editar um servidor, clique em <strong>Editar</strong>, altere os dados e clique em
+                    <strong>Salvar</strong>.</li>
+                <li>Para excluir um servidor, clique em <strong>Excluir</strong>. A ação será irreversível.</li>
+            </ol>
+        </section>
+
+        <section id="validações" style="margin-top:20px">
+            <h2>Validações importantes</h2>
+            <ul>
+                <li>Todos os campos obrigatórios devem ser preenchidos.</li>
+                <li>E-mail deve estar no formato válido.</li>
+                <li>Senha deve ter no mínimo 6 caracteres.</li>
+                <li>Servidor só pode ser excluído se não tiver trocas de aulas futuras associadas.</li>
+            </ul>
+        </section>
+
+        <section id="imagens" style="margin-top:20px">
+            <figure>
+                <img src="../../imagens/cadastro-servidor.png" alt="Tela de cadastro de servidor"
+                    style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:6px">
+                <figcaption>Tela de cadastro de servidor.</figcaption>
+            </figure>
+            <figure>
+                <img src="../../imagens/lista-servidor.png" alt="Lista de servidores"
+                    style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:6px">
+                <figcaption>Tela de listagem de servidores.</figcaption>
+            </figure>
+            <figure style="margin-top:12px">
+                <img src="../../imagens/alterar-servidor.png" alt="Editar servidor"
+                    style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:6px">
+                <figcaption>Tela de edição de servidor.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="page-footer">
+        <p>Desenvolvido por discentes do IFSP - Campus Presidente Epitácio</p>
+        <p>© 2025 IFSP - Campus Presidente Epitácio</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const sidebar = document.getElementById('sidebar');
+        const body = document.body;
+        const headerOffset = 80;
+
+        window.addEventListener('load', () => {
+            sidebar.classList.add('open');
+            body.classList.add('menu-open');
+            sidebar.setAttribute('aria-hidden', 'false');
+        });
+
+        menuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            body.classList.toggle('menu-open');
+            sidebar.setAttribute('aria-hidden', !sidebar.classList.contains('open'));
+        });
+
+        document.querySelectorAll('.subtitulo').forEach(sub => {
+            sub.addEventListener('click', () => sub.parentElement.classList.toggle('open'));
+        });
+
+        document.getElementById('darkModeBtn').addEventListener('click', () => {
+            body.classList.toggle('dark');
+        });
+
+        document.querySelectorAll('.toc a').forEach(a => {
+            a.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = a.getAttribute('href').slice(1);
+                const el = document.getElementById(targetId);
+                if (!el) return;
+                const topPos = el.getBoundingClientRect().top + window.scrollY - headerOffset;
+                window.scrollTo({ top: topPos, behavior: 'smooth' });
+                document.querySelectorAll('.toc a').forEach(x => x.classList.remove('active'));
+                a.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

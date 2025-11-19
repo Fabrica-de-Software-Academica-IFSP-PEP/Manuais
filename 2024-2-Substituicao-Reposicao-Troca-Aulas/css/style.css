@@ -1,0 +1,398 @@
+/* RESET */
+:root {
+    --green: #5cb85c;
+    --sidebar-width: 260px;
+    --toc-width: 230px;
+    --top-height: 70px;
+    --footer-height: 80px;
+    --gray-sidebar: #c2c4c2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===================== TOPO ===================== */
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--top-height);
+    background: var(--green);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* centraliza verticalmente */
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    z-index: 30;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    height: 48px;
+    border-radius: 4px;
+    object-fit: contain;
+    display: block;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ===== BOTÕES ===== */
+.hamburger,
+.darkmode {
+    font-size: 1.4rem;
+    background: rgba(255, 255, 255, 0.12);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.2s, transform 0.12s;
+}
+
+.hamburger:hover,
+.darkmode:hover {
+    background: rgba(255, 255, 255, 0.22);
+    transform: scale(1.05);
+}
+
+/* ===================== SIDEBAR ===================== */
+.sidebar {
+    position: fixed;
+    top: var(--top-height);
+    left: 0;
+    width: var(--sidebar-width);
+    height: calc(100vh - var(--top-height) - var(--footer-height));
+    background: #fff;
+    padding: 15px;
+    overflow-y: auto;
+    transition: transform 0.28s ease, box-shadow 0.28s;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.08);
+    border-right: 1px solid #ddd;
+    z-index: 20;
+    border-radius: 0 8px 8px 0;
+}
+
+.sidebar.closed {
+    transform: translateX(calc(-1 * var(--sidebar-width) - 20px));
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.side-nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 14px;
+    border-radius: 8px;
+    display: block;
+    transition: background 0.18s, color 0.18s;
+    font-weight: 500;
+}
+
+.side-nav a.active {
+    background: var(--green);
+    color: #fff;
+}
+
+.side-nav a:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+.menu-item .submenu {
+    display: none;
+    flex-direction: column;
+    padding-left: 12px;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.menu-item.open>.submenu {
+    display: flex;
+}
+
+.subtitulo {
+    cursor: pointer;
+    padding: 10px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    transition: background 0.18s, color 0.18s;
+    font-weight: 600;
+}
+
+.subtitulo:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+.arrow {
+    transition: transform 0.25s;
+}
+
+.menu-item.open .arrow {
+    transform: rotate(180deg);
+}
+
+/* ===================== ÍNDICE DA PÁGINA (TOC) ===================== */
+/* toc respeita o footer: fica entre top e footer (não em cima do footer) */
+.toc {
+    position: fixed;
+    right: 0;
+    top: var(--top-height);
+    /* agora encosta no topo */
+    width: var(--toc-width);
+    background: #ffffff;
+    padding: 16px;
+    border-left: 1px solid #ddd;
+
+    /* altura ajustada para manter distância do footer */
+    height: calc(100vh - var(--top-height) - var(--footer-height));
+
+    overflow-y: auto;
+    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.06);
+    z-index: 20;
+    border-radius: 8px 0 0 8px;
+}
+
+.toc h3 {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+    color: var(--green);
+}
+
+.toc ul {
+    list-style: none;
+}
+
+.toc li {
+    margin-bottom: 10px;
+}
+
+.toc a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.14s, font-weight 0.14s;
+}
+
+.toc a:hover {
+    color: var(--green);
+}
+
+.toc a.active {
+    font-weight: 700;
+    color: var(--green);
+}
+
+/* ===================== CONTEÚDO ===================== */
+.content {
+    margin-top: calc(var(--top-height) + 10px);
+    padding: 30px 36px;
+    margin-left: 20px;
+    width: calc(100% - var(--sidebar-width) - var(--toc-width) - 60px);
+    transition: margin-left 0.28s;
+    flex: 1;
+    line-height: 1.6;
+    min-height: calc(100vh - var(--top-height) - var(--footer-height));
+}
+
+/* quando menu abrir, desloca conteúdo (principalmente em desktop) */
+body.menu-open .content {
+    margin-left: calc(var(--sidebar-width) + 20px);
+}
+
+.content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: var(--green);
+}
+
+.content h2 {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    color: var(--green);
+}
+
+.content p {
+    margin-bottom: 12px;
+}
+
+/* listagem sem bullets */
+.content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content ul li {
+    margin-bottom: 8px;
+    padding-left: 8px;
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+    background: var(--gray-sidebar);
+    color: #333;
+    text-align: center;
+    padding: 18px 12px;
+    border-top: 1px solid #b5b5b5;
+    height: var(--footer-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* ===================== RESPONSIVO ===================== */
+@media (max-width: 1150px) {
+    .toc {
+        display: none;
+        /* esconde toc em telas menores */
+    }
+
+    .content {
+        width: calc(100% - var(--sidebar-width) - 40px);
+    }
+}
+
+@media (max-width: 900px) {
+    .content {
+        width: 100%;
+        padding: 18px;
+        margin-left: 0;
+    }
+
+    .sidebar {
+        transform: translateX(calc(-1 * var(--sidebar-width) - 20px));
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    body.menu-open .content {
+        margin-left: 0;
+    }
+}
+
+/* ===================== DARK MODE ===================== */
+body.dark {
+    background: #141414;
+    color: #e6e6e6;
+}
+
+body.dark .sidebar,
+body.dark .toc {
+    background: #222;
+    border-color: #333;
+}
+
+body.dark .side-nav a {
+    color: #e6e6e6;
+}
+
+body.dark .side-nav a:hover,
+body.dark .side-nav a.active {
+    background: var(--green);
+    color: #fff;
+}
+
+body.dark .topbar {
+    background: #479b47;
+}
+
+body.dark .footer {
+    background: #1e1e1e;
+    color: #ddd;
+}
+
+/* Espaçamento maior entre título da seção e o texto */
+.content section h2+p,
+.content section h2+ul,
+.content section h2+div {
+    margin-top: 18px;
+}
+
+/* Espaço extra entre o título principal (h1) e o primeiro parágrafo */
+.content h1+p,
+.content h1+div,
+.content h1+ul {
+    margin-top: 20px;
+}
+
+/* ===================== TABELA DE PERMISSÕES ===================== */
+.permissoes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 0.95rem;
+}
+
+.permissoes th,
+.permissoes td {
+    padding: 10px 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.permissoes th {
+    background: var(--green);
+    color: #fff;
+    font-weight: 600;
+}
+
+.permissoes tbody tr:nth-child(even) {
+    background: #f1f1f1;
+}
+
+body.dark .permissoes tbody tr:nth-child(even) {
+    background: #2a2a2a;
+}
+
+.permissoes tbody tr:hover {
+    background: rgba(92, 184, 92, 0.15);
+}
+
+.permissoes td:first-child {
+    text-align: left;
+}
+
+.permissoes td {
+    font-weight: 500;
+}
+
+.permissoes td span {
+    display: inline-block;
+}
