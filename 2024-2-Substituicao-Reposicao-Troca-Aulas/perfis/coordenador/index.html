@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfis - SGRST</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- TOPO -->
+    <header class="topbar">
+        <div class="top-left">
+            <img src="../../imagens/logo.jpg" alt="Logo IFSP" class="logo">
+            <button id="menuBtn" class="hamburger" aria-label="Abrir menu">☰</button>
+        </div>
+        <div class="top-right">
+            <button id="darkModeBtn" class="darkmode" aria-label="Ativar modo escuro">🌙</button>
+        </div>
+    </header>
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar closed" id="sidebar" aria-hidden="true">
+        <nav class="side-nav">
+            <a href="../../manual/index.html" class="nav-link">Manual</a>
+            <a href="../../introducao/index.html" class="nav-link">Introdução</a>
+
+            <div class="menu-item">
+                <span class="subtitulo">Perfis <span class="material-icons arrow">expand_more</span></span>
+                <div class="submenu">
+                    <a href="../../perfis/index.html">Geral</a>
+                    <a href="../../perfis/professor/index.html">Professor</a>
+                    <a href="index.html">Coordenador</a>
+                    <a href="../../perfis/cae/index.html">CAE</a>
+                </div>
+            </div>
+            <!-- Guias -->
+            <div class="menu-item">
+                <span class="subtitulo">Guias <span class="material-icons arrow">expand_more</span></span>
+                <div class="submenu">
+                    <div class="menu-item">
+                        <span class="subtitulo">Professor <span class="material-icons arrow">expand_more</span></span>
+                        <div class="submenu">
+                            <a href="../professor/cadastrar-troca.html">Cadastrar Troca de Aulas</a>
+                            <a href="../professor/listar-troca.html">Gerenciar Trocas de Aulas</a>
+                            <a href="../professor/horarios-cadastrar.html">Cadastrar Horários</a>
+                            <a href="../professor/horarios-listar.html">Gerenciar Horários</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <span class="subtitulo">Coordenador <span class="material-icons arrow">expand_more</span></span>
+                        <div class="submenu">
+                            <a href="cadastrar-troca.html">Cadastrar Troca de Aulas</a>
+                            <a href="listar-troca.html">Gerenciar Trocas de Aulas</a>
+                            <a href="disciplinas.html">Disciplinas</a>
+                            <a href="horarios.html">Horários</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <span class="subtitulo">CAE <span class="material-icons arrow">expand_more</span></span>
+                        <div class="submenu">
+                            <a href="../cae/cursos.html">Cursos</a>
+                            <a href="../cae/servidores.html">Servidores</a>
+                            <a href="../cae/consultar-trocas.html">Consultar Trocas</a>
+                        </div>
+                    </div>
+
+                    <a href="../../acesso/login.html">Login</a>
+                    <a href="../../acesso/recuperar-alterar-senha.html">Recuperar/Alterar Senha</a>
+                </div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- ÍNDICE -->
+    <aside class="toc" id="page-toc" aria-label="Índice da página">
+        <h3>Índice</h3>
+        <ul id="toc-list">
+            <li><a href="#papel-do-coordenador" class="toc-link">Papel do Coordenador</a></li>
+            <li><a href="#principais-atividades" class="toc-link">Principais Atividades</a></li>
+        </ul>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main class="content">
+        <section id="coordenador-detalhado">
+            <h2>🎓 Coordenador – Papel e Atividades Detalhadas</h2>
+            <p>
+                O coordenador utiliza o sistema para gerenciar disciplinas, horários e trocas de aulas, podendo
+                supervisionar os registros feitos pelos professores e garantindo a organização e controle das atividades
+                pedagógicas.
+            </p>
+
+            <h3 id="papel-do-coordenador">🎓 Papel do Coordenador</h3>
+
+            <h4>Gestor de Disciplinas</h4>
+            <p>O coordenador cadastra, edita, lista e exclui disciplinas, garantindo que a grade do curso esteja
+                organizada.</p>
+
+            <h4>Gestor de Horários</h4>
+            <p>O coordenador define horários disponíveis para substituição, podendo gerenciar os horários de todos os
+                professores.</p>
+
+            <h4>Gestor de Trocas de Aulas</h4>
+            <p>O coordenador pode cadastrar, editar e excluir trocas de aulas, inclusive das solicitações dos
+                professores.</p>
+
+            <h3 id="principais-atividades">📝 Principais Atividades</h3>
+
+            <h4>Cadastrar disciplinas</h4>
+            <p>Incluir novas disciplinas no sistema, definindo nome e sigla.</p>
+
+            <h4>Gerenciar horários disponíveis</h4>
+            <p>Adicionar, editar ou remover horários de substituição para professores.</p>
+
+            <h4>Cadastrar trocas de aulas</h4>
+            <p>Registrar reposições, substituições ou trocas de aulas, notificando automaticamente os professores
+                envolvidos.</p>
+
+            <h4>Editar e excluir solicitações</h4>
+            <p>Alterar ou remover qualquer solicitação de troca de aula registrada no sistema.</p>
+
+            <h4>Visualizar histórico de solicitações</h4>
+            <p>Permite acompanhar todas as trocas e reposições registradas, garantindo controle e transparência.</p>
+
+            <p>
+                Dessa forma, o coordenador atua como um supervisor ativo do sistema, garantindo que todas as atividades
+                pedagógicas sejam registradas e organizadas corretamente.
+            </p>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="page-footer">
+        <p>Desenvolvido por discentes do IFSP - Campus Presidente Epitácio</p>
+        <p>© 2025 IFSP - Campus Presidente Epitácio</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const sidebar = document.getElementById('sidebar');
+        const body = document.body;
+        const headerOffset = 80;
+
+        // Abre o menu por padrão ao carregar a página
+        window.addEventListener('load', () => {
+            sidebar.classList.add('open');
+            body.classList.add('menu-open');
+            sidebar.setAttribute('aria-hidden', false);
+        });
+
+        menuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            body.classList.toggle('menu-open');
+            sidebar.setAttribute('aria-hidden', !sidebar.classList.contains('open'));
+        });
+
+        document.querySelectorAll('.subtitulo').forEach(sub => {
+            sub.addEventListener('click', () => {
+                sub.parentElement.classList.toggle('open');
+            });
+        });
+
+        document.getElementById('darkModeBtn').addEventListener('click', () => {
+            body.classList.toggle('dark');
+        });
+
+        // Smooth scroll + destaque no índice
+        document.querySelectorAll('.toc a').forEach(a => {
+            a.addEventListener('click', (e) => {
+                e.preventDefault();
+                const el = document.querySelector(a.getAttribute('href'));
+                const topPos = el.getBoundingClientRect().top + window.scrollY - headerOffset;
+                window.scrollTo({ top: topPos, behavior: 'smooth' });
+                document.querySelectorAll('.toc a').forEach(x => x.classList.remove('active'));
+                a.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introdução - SGRST</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- TOPO -->
+    <header class="topbar">
+        <div class="top-left">
+            <img src="../imagens/logo.jpg" alt="Logo IFSP" class="logo">
+            <button id="menuBtn" class="hamburger" aria-label="Abrir menu">☰</button>
+        </div>
+        <div class="top-right">
+            <button id="darkModeBtn" class="darkmode" aria-label="Ativar modo escuro">🌙</button>
+        </div>
+    </header>
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar closed" id="sidebar" aria-hidden="true">
+        <nav class="side-nav">
+            <a href="../manual/index.html" class="nav-link">Manual</a>
+            <a href="../introducao/index.html" class="nav-link">Introdução</a>
+
+            <!-- Perfis -->
+            <div class="menu-item">
+                <span class="subtitulo">Perfis <span class="material-icons arrow">expand_more</span></span>
+                <div class="submenu">
+                    <a href="../perfis/index.html">Geral</a>
+                    <a href="../perfis/professor/index.html">Professor</a>
+                    <a href="../perfis/coordenador/index.html">Coordenador</a>
+                    <a href="../perfis/cae/index.html">CAE</a>
+                </div>
+            </div>
+
+            <!-- Guias -->
+            <div class="menu-item">
+                <span class="subtitulo">Guias <span class="material-icons arrow">expand_more</span></span>
+                <div class="submenu">
+                    <div class="menu-item">
+                        <span class="subtitulo">Professor <span class="material-icons arrow">expand_more</span></span>
+                        <div class="submenu">
+                            <a href="../perfis/professor/cadastrar-troca.html">Cadastrar Troca de Aulas</a>
+                            <a href="../perfis/professor/listar-troca.html">Gerenciar Trocas de Aulas</a>
+                            <a href="../perfis/professor/horarios-cadastrar.html">Cadastrar Horários</a>
+                            <a href="../perfis/professor/horarios-listar.html">Gerenciar Horários</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <span class="subtitulo">Coordenador <span class="material-icons arrow">expand_more</span></span>
+                        <div class="submenu">
+                            <a href="../perfis/coordenador/cadastrar-troca.html">Cadastrar Troca de Aulas</a>
+                            <a href="../perfis/coordenador/listar-troca.html">Gerenciar Trocas de Aulas</a>
+                            <a href="../perfis/coordenador/disciplinas.html">Disciplinas</a>
+                            <a href="../perfis/coordenador/horarios.html">Horários</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <span class="subtitulo">CAE <span class="material-icons arrow">expand_more</span></span>
+                        <div class="submenu">
+                            <a href="../perfis/cae/cursos.html">Cursos</a>
+                            <a href="../perfis/cae/servidores.html">Servidores</a>
+                            <a href="../perfis/cae/consultar-trocas.html">Consultar Trocas</a>
+                        </div>
+                    </div>
+
+                    <a href="../acesso/login.html">Login</a>
+                    <a href="../acesso/recuperar-alterar-senha.html">Recuperar/Alterar Senha</a>
+                </div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- ÍNDICE DA PÁGINA (TOC) - INTRODUÇÃO -->
+    <aside class="toc" id="page-toc" aria-label="Índice da página">
+        <h3>Índice</h3>
+        <ul id="toc-list">
+            <li><a href="#objetivo" class="toc-link">Objetivo</a></li>
+            <li><a href="#modulos" class="toc-link">Principais Módulos</a></li>
+            <li><a href="#beneficios" class="toc-link">Benefícios Gerais</a></li>
+        </ul>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main class="content">
+        <h1>Introdução</h1>
+
+        <!-- OBJETIVO -->
+        <section id="objetivo">
+            <h2>🎯 Objetivo</h2>
+            <p>
+                O Sistema de Gerenciamento de Reposição, Substituição e Troca de Aulas (SGRST) foi desenvolvido para
+                organizar e facilitar o controle de atividades acadêmicas relacionadas à troca, reposição e substituição
+                de aulas.
+            </p>
+            <p>
+                Seu objetivo é proporcionar um ambiente simples, transparente e eficiente, permitindo que servidores
+                registrem informações com mais rapidez, reduzindo erros e garantindo melhor acompanhamento por parte da
+                coordenação e setores administrativos.
+            </p>
+            <p>
+                O sistema centraliza todas as solicitações, cadastros e consultas, tornando o processo mais seguro e
+                acessível.
+            </p>
+        </section>
+
+        <!-- MÓDULOS -->
+        <section id="modulos">
+            <h2>📁 Principais Módulos do Sistema</h2>
+
+            <!-- TEXTO AGORA LOGO ABAIXO DO TÍTULO -->
+            <p>
+                O SGRST é composto por módulos essenciais que possibilitam o funcionamento completo do sistema:
+            </p>
+
+            <ul>
+                <li>
+                    <h3>Servidor</h3>
+                    <p>
+                        Permite o cadastro e gerenciamento das informações de servidores,
+                        incluindo nome, papel, contato e credenciais de acesso. É neste módulo que novos usuários podem
+                        ser
+                        incluídos e servidores existentes podem ser atualizados ou removidos quando necessário.
+                    </p>
+                </li>
+
+                <li>
+                    <h3>Curso</h3>
+                    <p>
+                        Responsável pelo cadastro e manutenção dos cursos oferecidos. Permite
+                        registrar nomes, siglas e manter uma listagem organizada para utilização nas demais
+                        funcionalidades
+                        do sistema.
+                    </p>
+                </li>
+
+                <li>
+                    <h3>Disciplina</h3>
+                    <p>
+                        Módulo destinado ao cadastro das disciplinas.
+                        Inclui nome da disciplina, sigla e demais informações essenciais para associação com
+                        solicitações de
+                        aula.
+                    </p>
+                </li>
+
+                <li>
+                    <h3>Troca de Aula</h3>
+                    <p>
+                        É o coração do sistema. Neste módulo são registradas solicitações de
+                        reposição, substituição ou troca de aulas. O usuário pode informar data, horário, disciplina,
+                        responsável, motivo e professor substituto quando necessário. Também permite consultar, editar e
+                        excluir registros conforme necessidade.
+                    </p>
+                </li>
+
+                <li>
+                    <h3>Horários Disponíveis</h3>
+                    <p>
+                        Módulo utilizado para cadastrar e consultar horários em que
+                        servidores estão disponíveis para atuar como substitutos. Ajuda a otimizar o processo de busca
+                        por
+                        professores aptos a cobrir determinada aula.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- BENEFÍCIOS -->
+        <section id="beneficios">
+            <h2>💡 Benefícios do Sistema</h2>
+
+            <!-- TEXTO ABAIXO DO TÍTULO -->
+            <p>
+                O SGRST oferece diversas vantagens que tornam o processo de gerenciamento acadêmico mais eficiente:
+            </p>
+
+            <ul>
+                <li>
+                    <h3>Centralização das informações</h3>
+                    <p>Tudo organizado em um único sistema.</p>
+                </li>
+
+                <li>
+                    <h3>Redução de falhas operacionais</h3>
+                    <p>Validações automáticas evitam dados incompletos, inconsistentes ou inválidos.</p>
+                </li>
+
+                <li>
+                    <h3>Agilidade</h3>
+                    <p>Solicitações registradas e notificadas rapidamente.</p>
+                </li>
+
+                <li>
+                    <h3>Transparência</h3>
+                    <p>Qualquer usuário habilitado pode visualizar histórico e status das solicitações.</p>
+                </li>
+
+                <li>
+                    <h3>Melhor gestão acadêmica</h3>
+                    <p>Auxilia a coordenação e setores administrativos a acompanhar e planejar as atividades docentes
+                        com eficiência.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer" id="page-footer">
+        <p>Desenvolvido por discentes do IFSP - Campus Presidente Epitácio</p>
+        <p>© 2025 IFSP - Campus Presidente Epitácio</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const sidebar = document.getElementById('sidebar');
+        const body = document.body;
+        const headerOffset = 80;
+
+        // Abre o menu por padrão ao carregar a página
+        window.addEventListener('load', () => {
+            sidebar.classList.add('open');
+            body.classList.add('menu-open');
+            sidebar.setAttribute('aria-hidden', false);
+        });
+
+        menuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            body.classList.toggle('menu-open');
+            sidebar.setAttribute('aria-hidden', !sidebar.classList.contains('open'));
+        });
+
+        document.querySelectorAll('.subtitulo').forEach(sub => {
+            sub.addEventListener('click', () => {
+                sub.parentElement.classList.toggle('open');
+            });
+        });
+
+        document.getElementById('darkModeBtn').addEventListener('click', () => {
+            body.classList.toggle('dark');
+        });
+
+        // Smooth scroll + destaque no índice
+        document.querySelectorAll('.toc a').forEach(a => {
+            a.addEventListener('click', (e) => {
+                e.preventDefault();
+                const el = document.querySelector(a.getAttribute('href'));
+                const topPos = el.getBoundingClientRect().top + window.scrollY - headerOffset;
+                window.scrollTo({ top: topPos, behavior: 'smooth' });
+                document.querySelectorAll('.toc a').forEach(x => x.classList.remove('active'));
+                a.classList.add('active');
+            });
+        });
+
+        const sections = [
+            document.getElementById('objetivo'),
+            document.getElementById('modulos'),
+            document.getElementById('beneficios')
+        ];
+
+        function onScrollToc() {
+            let currentId = null;
+            const scrollPos = window.scrollY + headerOffset + 10;
+            sections.forEach(sec => {
+                if (scrollPos >= sec.offsetTop) currentId = sec.id;
+            });
+            document.querySelectorAll('.toc a').forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === ('#' + currentId));
+            });
+        }
+
+        document.addEventListener('scroll', onScrollToc);
+        onScrollToc();
+    </script>
+
+</body>
+
+</html>

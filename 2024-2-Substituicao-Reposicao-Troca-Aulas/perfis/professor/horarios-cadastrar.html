@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guias — Cadastrar Horários - SGRST</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- TOPO -->
+    <header class="topbar">
+        <div class="top-left">
+            <img src="../../imagens/logo.jpg" alt="Logo IFSP" class="logo">
+            <button id="menuBtn" class="hamburger" aria-label="Abrir menu">☰</button>
+        </div>
+        <div class="top-right">
+            <button id="darkModeBtn" class="darkmode" aria-label="Ativar modo escuro">🌙</button>
+        </div>
+    </header>
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar closed" id="sidebar" aria-hidden="true">
+        <nav class="side-nav">
+            <a href="../../manual/index.html" class="nav-link">Manual</a>
+            <a href="../../introducao/index.html" class="nav-link">Introdução</a>
+            <div class="menu-item">
+                <span class="subtitulo">Perfis <span class="material-icons arrow">expand_more</span></span>
+                <div class="submenu">
+                    <a href="../index.html">Geral</a>
+                    <a href="index.html">Professor</a>
+                    <a href="../coordenador/index.html">Coordenador</a>
+                    <a href="../cae/index.html">CAE</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <span class="subtitulo">Guias <span class="material-icons arrow">expand_more</span></span>
+                <div class="submenu">
+                    <div class="menu-item">
+                        <span class="subtitulo">Professor <span class="material-icons arrow">expand_more</span></span>
+                        <div class="submenu">
+                            <a href="cadastrar-troca.html" class="active">Cadastrar Troca de Aulas</a>
+                            <a href="listar-troca.html">Gerenciar Trocas de Aulas</a>
+                            <a href="horarios-cadastrar.html">Cadastrar Horários</a>
+                            <a href="horarios-listar.html">Gerenciar Horários</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <span class="subtitulo">Coordenador <span class="material-icons arrow">expand_more</span></span>
+                        <div class="submenu">
+                            <a href="../coordenador/cadastrar-troca.html">Cadastrar Troca de Aulas</a>
+                            <a href="../coordenador/listar-troca.html">Gerenciar Trocas de Aulas</a>
+                            <a href="../coordenador/disciplinas.html">Disciplinas</a>
+                            <a href="../coordenador/horarios.html">Horários</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <span class="subtitulo">CAE <span class="material-icons arrow">expand_more</span></span>
+                        <div class="submenu">
+                            <a href="../cae/cursos.html">Cursos</a>
+                            <a href="../cae/servidores.html">Servidores</a>
+                            <a href="../cae/consultar-trocas.html">Consultar Trocas</a>
+                        </div>
+                    </div>
+                    <a href="../../acesso/login.html">Login</a>
+                    <a href="../../acesso/recuperar-alterar-senha.html">Recuperar/Alterar Senha</a>
+                </div>
+            </div>
+    </aside>
+
+    <!-- ÍNDICE -->
+    <aside class="toc" id="page-toc" aria-label="Índice da página">
+        <h3>Índice</h3>
+        <ul id="toc-list">
+            <li><a href="#descricao" class="toc-link">Descrição</a></li>
+            <li><a href="#passo-a-passo" class="toc-link">Passo a passo</a></li>
+            <li><a href="#validações" class="toc-link">Validações</a></li>
+            <li><a href="#imagens" class="toc-link">Imagens</a></li>
+        </ul>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main class="content">
+        <h1>📝 Cadastrar Horários Disponíveis</h1>
+
+        <section id="descricao">
+            <h2>Descrição</h2>
+            <p>
+                Professores podem informar os horários disponíveis para substituição de aulas.
+                O cadastro inclui ano, dia da semana, horário inicial e horário final.
+            </p>
+        </section>
+
+        <section id="passo-a-passo">
+            <h2>Passo a passo</h2>
+            <ol>
+                <li>
+                    No menu lateral, clique em <strong>Cadastrar Horários Disponíveis para Substituição</strong>.
+                </li>
+                <li>
+                    Preencha o formulário:
+                    <ul>
+                        <li><strong>Ano</strong> — selecione o ano letivo.</li>
+                        <li><strong>Dia da semana</strong> — escolha o dia.</li>
+                        <li><strong>Horário inicial</strong> — hora de início do horário disponível.</li>
+                        <li><strong>Horário final</strong> — hora de término do horário disponível.</li>
+                    </ul>
+                </li>
+                <li>Clique em <strong>Cadastrar</strong>. O sistema validará horários inconsistentes ou sobrepostos.
+                </li>
+            </ol>
+        </section>
+
+        <section id="validações" style="margin-top:20px">
+            <h2>Validações importantes</h2>
+            <ul>
+                <li>Horário final deve ser maior que horário inicial.</li>
+                <li>Não é permitido cadastrar horários sobrepostos.</li>
+                <li>Professor só pode cadastrar horários próprios.</li>
+                <li>O semestre é definido automaticamente pelo mês informado:
+                    <br>• Janeiro a Junho → 1º semestre
+                    <br>• Julho a Dezembro → 2º semestre
+                </li>
+            </ul>
+        </section>
+
+        <section id="imagens" style="margin-top:20px">
+            <figure>
+                <img src="../../imagens/cadastrar-horario-prof.png" alt="Tela de cadastro de horário"
+                    style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:6px">
+                <figcaption>Tela de cadastro de horário disponível para substituição.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer class="footer" id="page-footer">
+        <p>Desenvolvido por discentes do IFSP - Campus Presidente Epitácio</p>
+        <p>© 2025 IFSP - Campus Presidente Epitácio</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const sidebar = document.getElementById('sidebar');
+        const body = document.body;
+        const headerOffset = 80;
+
+        // abre o menu por padrão ao carregar a página
+        window.addEventListener('load', () => {
+            sidebar.classList.add('open');
+            body.classList.add('menu-open');
+            sidebar.setAttribute('aria-hidden', 'false');
+        });
+
+        menuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            body.classList.toggle('menu-open');
+            sidebar.setAttribute('aria-hidden', !sidebar.classList.contains('open'));
+        });
+
+        document.querySelectorAll('.subtitulo').forEach(sub => {
+            sub.addEventListener('click', () => {
+                sub.parentElement.classList.toggle('open');
+            });
+        });
+
+        document.getElementById('darkModeBtn').addEventListener('click', () => {
+            body.classList.toggle('dark');
+        });
+
+        // Smooth scroll + destaque no índice
+        document.querySelectorAll('.toc a').forEach(a => {
+            a.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = a.getAttribute('href').slice(1);
+                const el = document.getElementById(targetId);
+                if (!el) return;
+                const topPos = el.getBoundingClientRect().top + window.scrollY - headerOffset;
+                window.scrollTo({ top: topPos, behavior: 'smooth' });
+                document.querySelectorAll('.toc a').forEach(x => x.classList.remove('active'));
+                a.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
