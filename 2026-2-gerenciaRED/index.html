@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manual do Sistema RED</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">  
+
+</head>
+<body>
+
+<!-- HERO -->
+ <header class="ifsp-topbar">
+    <img src="logo-ifsp.png" alt="IFSP">
+
+    <h2>Manual • Sistema RED</h2>
+</header>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Manual do Sistema</div>
+    <h1><span>RED</span> — Gerenciamento de<br>Regime de Exercícios Domiciliares</h1>
+    <p>Documentação dos níveis de acesso e funcionalidades do sistema. Este manual descreve o que cada perfil de usuário pode fazer dentro do RED.</p>
+    <div class="hero-meta">
+      <div class="hero-meta-item"><strong>IFSP</strong>Campus Presidente Epitácio</div>
+      <div class="hero-meta-item"><strong>Base legal</strong>Decreto-lei nº 1.044/1969</div>
+      <div class="hero-meta-item"><strong>Versão</strong>2026 — Manutenção</div>
+      <div class="hero-meta-item"><strong>Perfis</strong>CRA · CSP · Professor · Coordenador</div>
+    </div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#visao-geral" class="nav-link vis">
+      <span class="nav-dot" style="background:var(--accent)"></span>Visão Geral
+    </a>
+    <a href="#cra" class="nav-link cra">
+      <span class="nav-dot" style="background:var(--cra)"></span>CRA
+    </a>
+    <a href="#csp" class="nav-link csp">
+      <span class="nav-dot" style="background:var(--csp)"></span>CSP
+    </a>
+    <a href="#professor" class="nav-link prof">
+      <span class="nav-dot" style="background:var(--prof)"></span>Professor
+    </a>
+    <a href="#coordenador" class="nav-link coord">
+      <span class="nav-dot" style="background:var(--coord)"></span>Coordenador
+    </a>
+    <a href="#tecnologias" class="nav-link vis">
+      <span class="nav-dot" style="background:#888"></span>Tecnologias
+    </a>
+  </div>
+</nav>
+
+<!-- CONTEÚDO -->
+<main class="main">
+
+  <!-- ── VISÃO GERAL ── -->
+  <section id="visao-geral" class="section">
+    <div class="section-header">
+      <div class="section-icon" style="background:#f0ede8; font-size:22px">📋</div>
+      <div class="section-header-text">
+        <h2 style="color:var(--text)">Visão Geral do Sistema</h2>
+        <p>O RED automatiza e organiza os processos de concessão, acompanhamento e registro do Regime de Exercícios Domiciliares para estudantes afastados por motivos de saúde.</p>
+      </div>
+    </div>
+
+    <p style="font-size:14px;color:var(--muted);margin-bottom:20px">O fluxo do processo RED envolve quatro perfis em sequência:</p>
+
+    <div class="flow">
+      <div class="flow-step">
+        <div class="flow-step-num">Passo 1</div>
+        <div class="flow-step-role" style="color:var(--cra)">CRA</div>
+        <div class="flow-step-action">Abre o processo RED e notifica o coordenador</div>
+      </div>
+      <div class="flow-arrow">›</div>
+      <div class="flow-step">
+        <div class="flow-step-num">Passo 2</div>
+        <div class="flow-step-role" style="color:var(--coord)">Coordenador</div>
+        <div class="flow-step-action">Confirma ou rejeita o processo. Avisa a CSP</div>
+      </div>
+      <div class="flow-arrow">›</div>
+      <div class="flow-step">
+        <div class="flow-step-num">Passo 3</div>
+        <div class="flow-step-role" style="color:var(--csp)">CSP</div>
+        <div class="flow-step-action">Associa disciplinas ao processo RED do aluno</div>
+      </div>
+      <div class="flow-arrow">›</div>
+      <div class="flow-step">
+        <div class="flow-step-num">Passo 4</div>
+        <div class="flow-step-role" style="color:var(--coord)">Coordenador</div>
+        <div class="flow-step-action">Associa cada professor à disciplina correspondente</div>
+      </div>
+      <div class="flow-arrow">›</div>
+      <div class="flow-step">
+        <div class="flow-step-num">Passo 5</div>
+        <div class="flow-step-role" style="color:var(--prof)">Professor</div>
+        <div class="flow-step-action">Preenche o PEE e envia as atividades ao aluno</div>
+      </div>
+      <div class="flow-arrow">›</div>
+      <div class="flow-step">
+        <div class="flow-step-num">Passo 6</div>
+        <div class="flow-step-role" style="color:var(--prof)">Professor</div>
+        <div class="flow-step-action">Avalia as tarefas e define o % de abono de faltas</div>
+      </div>
+      <div class="flow-arrow">›</div>
+      <div class="flow-step">
+        <div class="flow-step-num">Passo 7</div>
+        <div class="flow-step-role" style="color:var(--cra)">CRA</div>
+        <div class="flow-step-action">Gera o relatório final de abono de faltas</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── CRA ── -->
+  <section id="cra" class="section">
+    <div class="section-header">
+      <div class="section-icon" style="font-size:22px">🏛️</div>
+      <div class="section-header-text">
+        <h2>CRA</h2>
+        <p>Coordenadoria de Registros Acadêmicos — responsável pela abertura e encerramento formal dos processos RED.</p>
+        <span class="role-badge">Nível de acesso: CRA</span>
+      </div>
+    </div>
+
+    <div class="overview">
+      A CRA é o ponto de entrada do processo. Ela cadastra o aluno (se necessário), abre o processo RED com os dados do afastamento e, ao final, recebe o relatório consolidado com os abonos de falta de todas as disciplinas.
+    </div>
+
+    <div class="features">
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">1</div>
+          <div class="feat-title">Criar processo RED</div>
+        </div>
+        <div class="feat-desc">Abre um novo processo de Regime de Exercícios Domiciliares para um aluno. Registra o motivo do afastamento, a data de início e o período previsto de ausência.</div>
+        <span class="feat-tag">Principal</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">2</div>
+          <div class="feat-title">Cadastrar / manter alunos</div>
+        </div>
+        <div class="feat-desc">Adiciona novos alunos ao sistema ou atualiza dados de alunos existentes (nome, prontuário, endereço, e-mail, telefone, curso). Também permite desativar alunos desvinculados da instituição.</div>
+        <span class="feat-tag">Cadastro</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">3</div>
+          <div class="feat-title">Notificar o coordenador</div>
+        </div>
+        <div class="feat-desc">Ao criar o processo RED, o sistema envia automaticamente um e-mail ao coordenador do curso do aluno, alertando para a necessidade de confirmação.</div>
+        <span class="feat-tag">Automático</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">4</div>
+          <div class="feat-title">Relatório de abono de faltas</div>
+        </div>
+        <div class="feat-desc">Ao término do processo, a CRA gera e visualiza o relatório final listando todas as faltas abonadas de cada disciplina, por aluno. Pode pesquisar os processos pelo nome do aluno.</div>
+        <span class="feat-tag">Relatório</span>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── CSP ── -->
+  <section id="csp" class="section">
+    <div class="section-header">
+      <div class="section-icon" style="font-size:22px">📂</div>
+      <div class="section-header-text">
+        <h2>CSP</h2>
+        <p>Coordenadoria Sócio-Pedagógica — responsável pela gestão das disciplinas, cursos e dados dos servidores.</p>
+        <span class="role-badge">Nível de acesso: CSP</span>
+      </div>
+    </div>
+
+    <div class="overview">
+      A CSP atua na parte administrativa do processo. Ela não altera os Planos Especiais de Estudos — apenas associa as disciplinas aos alunos em RED e garante que os dados de cursos, disciplinas e docentes estejam corretos no sistema.
+    </div>
+
+    <div class="features">
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">1</div>
+          <div class="feat-title">Visualizar processo RED</div>
+        </div>
+        <div class="feat-desc">Acessa os detalhes completos de qualquer processo RED ativo, incluindo disciplinas associadas, datas de afastamento e status atual.</div>
+        <span class="feat-tag">Visualização</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">2</div>
+          <div class="feat-title">Associar disciplinas ao processo</div>
+        </div>
+        <div class="feat-desc">Vincula uma ou mais disciplinas ao processo RED do aluno, respeitando a grade curricular do seu curso. Após a associação, notifica o coordenador por e-mail para dar continuidade.</div>
+        <span class="feat-tag">Principal</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">3</div>
+          <div class="feat-title">Manter disciplinas</div>
+        </div>
+        <div class="feat-desc">Adiciona, edita ou remove disciplinas do sistema. Também permite importar dados automaticamente a partir do SUAP (Sistema Unificado de Administração Pública).</div>
+        <span class="feat-tag">Cadastro</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">4</div>
+          <div class="feat-title">Manter cursos</div>
+        </div>
+        <div class="feat-desc">Cria, edita e exclui cursos cadastrados no sistema, mantendo as informações de grade curricular atualizadas.</div>
+        <span class="feat-tag">Cadastro</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">5</div>
+          <div class="feat-title">Manter servidores / docentes</div>
+        </div>
+        <div class="feat-desc">Cadastra, edita e desativa servidores (professores e técnicos). Permite importação dos dados docentes via SUAP para manter o cadastro sincronizado.</div>
+        <span class="feat-tag">Cadastro</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">6</div>
+          <div class="feat-title">Relatório de faltas</div>
+        </div>
+        <div class="feat-desc">Gera um relatório com as faltas que serão ou não abonadas, com base nas atividades realizadas pelo aluno em cada disciplina. Facilita o acompanhamento da frequência.</div>
+        <span class="feat-tag">Relatório</span>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── PROFESSOR ── -->
+  <section id="professor" class="section">
+    <div class="section-header">
+      <div class="section-icon" style="font-size:22px">✏️</div>
+      <div class="section-header-text">
+        <h2>Professor</h2>
+        <p>Responsável por elaborar e avaliar o Plano Especial de Estudos (PEE) de cada aluno em RED em sua disciplina.</p>
+        <span class="role-badge">Nível de acesso: Professor</span>
+      </div>
+    </div>
+
+    <div class="overview">
+      O professor recebe uma notificação do coordenador solicitando o preenchimento do PEE. Após o aluno realizar as atividades, o professor avalia o desempenho e indica o percentual de faltas a serem abonadas, encerrando sua parte no processo.
+    </div>
+
+    <div class="features">
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">1</div>
+          <div class="feat-title">Visualizar PEEs sob responsabilidade</div>
+        </div>
+        <div class="feat-desc">Lista todos os Planos Especiais de Estudos atribuídos ao professor, com o nome do aluno, disciplina, situação atual e prazos.</div>
+        <span class="feat-tag">Visualização</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">2</div>
+          <div class="feat-title">Preencher o PEE</div>
+        </div>
+        <div class="feat-desc">Elabora o plano com: conteúdo programático, metodologia, lista de atividades e trabalhos, critérios de avaliação, bibliografia e prazo final para entrega.</div>
+        <span class="feat-tag">Principal</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">3</div>
+          <div class="feat-title">Enviar PEE ao aluno por e-mail</div>
+        </div>
+        <div class="feat-desc">Após finalizar o preenchimento, o professor envia o PEE ao aluno via e-mail pelo próprio sistema, informando todas as atividades a serem desenvolvidas durante o afastamento.</div>
+        <span class="feat-tag">Automático</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">4</div>
+          <div class="feat-title">Avaliar atividades do aluno</div>
+        </div>
+        <div class="feat-desc">Após receber as tarefas realizadas pelo aluno, o professor analisa o cumprimento do PEE e indica o percentual de faltas a serem abonadas (0% a 100%).</div>
+        <span class="feat-tag">Principal</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">5</div>
+          <div class="feat-title">Finalizar o PEE</div>
+        </div>
+        <div class="feat-desc">Conclui formalmente o plano. O sistema envia automaticamente um e-mail ao coordenador informando a conclusão e o resultado da avaliação do aluno.</div>
+        <span class="feat-tag">Automático</span>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── COORDENADOR ── -->
+  <section id="coordenador" class="section">
+    <div class="section-header">
+      <div class="section-icon" style="font-size:22px">🎓</div>
+      <div class="section-header-text">
+        <h2>Coordenador de Curso</h2>
+        <p>Supervisiona o andamento de todos os processos RED do seu curso, valida a abertura e direciona cada disciplina ao professor responsável.</p>
+        <span class="role-badge">Nível de acesso: Coordenador</span>
+      </div>
+    </div>
+
+    <div class="overview">
+      O coordenador é o elo central do processo. Ele confirma ou rejeita os processos abertos pela CRA, associa professores às disciplinas de cada aluno, acompanha o andamento dos PEEs e tem visão consolidada de todo o RED do seu curso.
+    </div>
+
+    <div class="features">
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">1</div>
+          <div class="feat-title">Confirmar ou rejeitar processo RED</div>
+        </div>
+        <div class="feat-desc">Recebe notificação por e-mail quando a CRA abre um processo. Pode confirmar (dando continuidade) ou rejeitar o processo. Se confirmado, a CSP é avisada por e-mail.</div>
+        <span class="feat-tag">Principal</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">2</div>
+          <div class="feat-title">Associar professor à disciplina</div>
+        </div>
+        <div class="feat-desc">Vincula um professor a cada disciplina do processo RED de um aluno e envia notificação ao professor solicitando o preenchimento do PEE correspondente.</div>
+        <span class="feat-tag">Principal</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">3</div>
+          <div class="feat-title">Visualizar situação do RED</div>
+        </div>
+        <div class="feat-desc">Acessa uma visão consolidada de todos os alunos com processos RED ativos no curso, incluindo disciplinas envolvidas, prazos de entrega e status de cada PEE.</div>
+        <span class="feat-tag">Visualização</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">4</div>
+          <div class="feat-title">Visualizar todos os PEEs do curso</div>
+        </div>
+        <div class="feat-desc">Lista todos os Planos Especiais de Estudos relacionados ao curso, com filtros por período e status. Permite acessar os detalhes de cada plano individualmente.</div>
+        <span class="feat-tag">Visualização</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">5</div>
+          <div class="feat-title">Notificar professores por e-mail</div>
+        </div>
+        <div class="feat-desc">Envia e-mails de lembrete diretamente pelo sistema aos professores que ainda não preencheram o PEE de um determinado aluno.</div>
+        <span class="feat-tag">Comunicação</span>
+      </div>
+
+      <div class="feat">
+        <div class="feat-header">
+          <div class="feat-num">6</div>
+          <div class="feat-title">Manter docentes e disciplinas</div>
+        </div>
+        <div class="feat-desc">Também pode cadastrar, editar e importar dados de docentes e disciplinas do curso, com a mesma funcionalidade disponível na CSP.</div>
+        <span class="feat-tag">Cadastro</span>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── TECNOLOGIAS ── -->
+  <section id="tecnologias" class="section">
+    <div class="section-header">
+      <div class="section-icon" style="background:#f0ede8; font-size:22px">⚙️</div>
+      <div class="section-header-text">
+        <h2 style="color:var(--text)">Tecnologias do Sistema</h2>
+        <p>Requisitos não funcionais e arquitetura técnica definidos na documentação oficial do RED.</p>
+      </div>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-item">
+        <div class="tech-name">Angular</div>
+        <div class="tech-role">Frontend — Interface do usuário</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-name">Node.js</div>
+        <div class="tech-role">Backend — Servidor de aplicação</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-name">Express</div>
+        <div class="tech-role">Backend — Gerenciamento de rotas</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-name">MySQL</div>
+        <div class="tech-role">Banco de dados relacional</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-name">Prisma ORM</div>
+        <div class="tech-role">Mapeamento objeto-relacional</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-name">Nodemailer</div>
+        <div class="tech-role">Envio de e-mails automáticos</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-name">SUAP</div>
+        <div class="tech-role">Importação de dados externos</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-name">Windows ou Linux</div>
+        <div class="tech-role">Sistema operacional do servidor</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <strong>RED — Gerenciamento de Regime de Exercícios Domiciliares</strong><br>
+  IFSP Campus Presidente Epitácio · Decreto-lei nº 1.044/1969<br>
+  Desenvolvimento: Igor Antonio Serafim Siqueira e Igor Matheus Teixeira <br>
+  Manutenção 2024: Danilo Domingues Quirino, Murilo Lopes Fray de Oliveira e Natália Aparecida Barreiro Antunes Leonel <br>
+  Manutenção 2026: Maria Vitoria Marcelino Furrier<br>
+  Orientador: Prof. André Luís Olivete
+</footer>
+
+</body>
+</html>
