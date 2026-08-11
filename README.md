@@ -1,46 +1,89 @@
-# Manuais -  Fabrica de Software Academica IFSP/PEP
+# Manuais de Sistema — Fábrica de Software IFSP/PEP
 
-Este repositório é destinado aos manuais dos sistemas desenvolvidos na Fabrica de Software do IFSP/PEP.
+Este repositório consolida a coleção de manuais de sistemas desenvolvidos pela Fábrica de Software do IFSP - Campus Presidente Epitácio. O projeto é construído utilizando [Docusaurus](https://docusaurus.io/), um gerador moderno de sites estáticos que converte arquivos Markdown (`.md`) em um site interativo e padronizado.
 
-Sua utilização se dá por um repositório geral com a necessidade de uma pasta exclusiva para cada manual. Portanto, ao inserir seu manual neste repositório, deve se atentar aos cuidados:
+---
 
-## Inb4
+## Como adicionar um novo manual
 
-Cuidado com caminhos absolutos no seu projeto de documentação, opte por utilizar caminhos relativos
+O Docusaurus deste projeto está configurado para gerar a barra lateral e as rotas de navegação de forma **totalmente automática**. Siga o passo a passo abaixo para adicionar um novo manual ao site:
 
-Além disso, por padrão, o Jekill (Construtor de páginas) não lê diretórios começados com _ (underscore).
+### 1. Crie a pasta do projeto
+Navegue até a pasta `docs/` na raiz do repositório e crie uma nova pasta com o nome do projeto e o semestre de desenvolvimento.
+- **Exemplo:** `docs/2026-1-NovoProjeto`
 
-## Estrutura de pastas
+### 2. Defina o nome do manual na barra lateral
+Para que o menu lateral exiba um nome legível (em vez do nome da pasta), crie um arquivo chamado `_category_.json` dentro da pasta que você acabou de criar (`docs/2026-1-NovoProjeto/_category_.json`) com o seguinte conteúdo:
 
-```
-.
-└── 📂 raiz do repositório/
-    ├── 📂 [nome-do-projeto]/
-    │   └── 📄 conteúdo-estático.[html/js/md]
-    │
-    ├── 📂 [nome-do-projeto]/
-    │   └── 📄 conteúdo-estático.[html/js/md]
-    │
-    └── 📂 [nome-do-projeto]/
-        └── 📄 conteúdo-estático.[html/js/md]
+```json
+{
+  "label": "Nome do Novo Projeto"
+}
 ```
 
-Atente-se em **não mexer** em outros arquivos para evitar conflitos e deixar o nome do projeto igual ao nome do repositório do mesmo!
+### 3. Adicione os arquivos Markdown
+Crie os arquivos `.md` (Markdown) dentro da pasta do projeto. 
+- O arquivo principal deve se chamar `index.md`. Ele será a página inicial do manual.
+- Você pode criar subpastas e outros arquivos `.md` conforme a necessidade de organização do seu manual. O Docusaurus lerá toda a estrutura automaticamente.
 
-### Passos
+**Importante:** Todo arquivo `.md` deve iniciar com um "Frontmatter" (cabeçalho) para definir o título da página. Exemplo:
 
+```markdown
+---
+title: Introdução ao Sistema
+---
+
+# Introdução ao Sistema
+Escreva o conteúdo do manual aqui...
 ```
-***faça um fork do projeto***
-git clone https://github.com/[nome-de-usuario]/Manuais.git`
-***crie sua pasta com o nome adequado***
-***coloque suas alterações na sua pasta***
-git add .
-git commit -m "adicionando [nome-do-projeto]"
-git push -u origin main
-***abra uma pull request***
+
+### 4. Adicione imagens
+Recomendamos criar uma pasta `img/` ou semelhante dentro da pasta do seu projeto (ex: `docs/2026-1-NovoProjeto/img/`). Para referenciar a imagem no seu arquivo Markdown, utilize caminhos relativos:
+
+```markdown
+![Texto Alternativo da Imagem](img/minha-imagem.png)
 ```
 
-### Acesse e verifique
+> **Aviso sobre tags HTML**: Como o Docusaurus utiliza MDX (Markdown + React), evite usar tags HTML como `<img>` soltas, com atributos de `style="width: 100%"` ou sem a barra de fechamento (`/>`). Prefira sempre a sintaxe padrão do Markdown `![]()`.
 
-Se tudo ocorreu tudo bem, sua página deve estar disponível em:
-https://fabrica-de-software-academica-ifsp-pep.github.io/Manuais/nome-da-pasta-no-repositorio/
+---
+
+## Como Contribuir (Fork e Pull Request)
+
+Como este repositório não tem acesso aberto de edição para todos, o fluxo de trabalho para adicionar ou alterar manuais deve ser feito através de um **Fork**.
+
+1. **Faça um Fork**: No canto superior direito da página do repositório no GitHub, clique no botão **Fork** para criar uma cópia do repositório na sua conta.
+2. **Trabalhe no seu Fork**: Adicione seus manuais e faça testes locais no repositório que você acabou de clonar.
+3. **Abra um Pull Request (PR)**: Quando tudo estiver pronto, acesse a página do repositório original e abra um **Pull Request** propondo as suas alterações.
+
+> **Importante:** Para evitar sobrecarga na revisão, envie o seu Pull Request **apenas ao final do semestre**, quando o manual estiver completamente finalizado e testado.
+
+---
+
+## Desenvolvimento Local
+
+Para testar as alterações localmente na sua máquina e visualizar o site, você precisará ter o [Node.js](https://nodejs.org/) instalado.
+
+**Instale as dependências (apenas na primeira vez):**
+```bash
+npm install
+```
+
+**Inicie o servidor de desenvolvimento:**
+```bash
+npm run start
+```
+*Isso abrirá uma janela no seu navegador (normalmente em `http://localhost:3000`). Qualquer alteração salva nos arquivos `.md` será atualizada em tempo real na tela.*
+
+## Build e Deploy
+
+Para gerar a versão estática de produção do site:
+```bash
+npm run build
+```
+Isso criará uma pasta `build/` contendo os arquivos finais minificados e otimizados, prontos para serem hospedados em qualquer servidor estático (como GitHub Pages, Vercel ou Apache/Nginx).
+
+---
+
+## Formato Antigo (Legado)
+Os arquivos originais em formato HTML/CSS puro (antes da migração para o Docusaurus) encontram-se preservados na pasta `old_format/`. Eles não são compilados pelo Docusaurus e servem apenas para fins de histórico e consulta.
