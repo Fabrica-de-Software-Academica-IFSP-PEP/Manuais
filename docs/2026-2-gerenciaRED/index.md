@@ -51,5 +51,6 @@ Requisitos não funcionais e arquitetura técnica definidos na documentação of
 
 **Desenvolvimento:** Igor Antonio Serafim Siqueira e Igor Matheus Teixeira  
 **Manutenção 2024:** Danilo Domingues Quirino, Murilo Lopes Fray de Oliveira e Natália Aparecida Barreiro Antunes Leonel  
-**Manutenção 2026:** Maria Vitoria Marcelino Furrier  
-**Orientador:** Prof. André Luís Olivete
+**Manutenção 1º sem/2026:** Maria Vitoria Marcelino Furrier
+**Implantação/Manutenção 2º sem/2026:** Cristian Trevelin Roefero
+**Orientadores:** Prof. André Luís Olivete // Andrea Padovan Jubileu (implantação/manutenção 2 sem 2026) 
