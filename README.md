@@ -75,14 +75,6 @@ npm run start
 ```
 *Isso abrirá uma janela no seu navegador (normalmente em `http://localhost:3000`). Qualquer alteração salva nos arquivos `.md` será atualizada em tempo real na tela.*
 
-## Build e Deploy
-
-Para gerar a versão estática de produção do site:
-```bash
-npm run build
-```
-Isso criará uma pasta `build/` contendo os arquivos finais minificados e otimizados, prontos para serem hospedados em qualquer servidor estático (como GitHub Pages, Vercel ou Apache/Nginx).
-
 ---
 
 ## Formato Antigo (Legado)
