@@ -4,23 +4,23 @@ description: Treinamento completo para membros da Coordenadoria Sociopedagógica
 tags: [dados, importacao, cadastro]
 ---
 
-# Tutorial para CSP
+# Tutorial para CSP — Configuração e Dados
 
-- **Importação** de mapas de docentes e turmas
-- **Cadastro manual** de usuários
-- **Gestão** de coordenadores de curso
-- **Criação e finalização** de atas
-- **Administração completa** do sistema
+- **Importação** de mapas de docentes e turmas (automática ou manual)
+- **Cadastro manual e edição** de usuários e vínculo de componentes
+- **Gestão** de coordenadores de curso e consulta de docentes relacionados
+- **Visualização e exportação** do Resumo da Turma (por bimestre e consolidado)
+- **Criação, condução e validação** de atas pedagógicas e deliberativas
 
 ## Informações sobre os dados
 
-Todos os dados a serem importados no sistema são obtidos no [Suap](https://suap.ifsp.edu.br/). A CSP deve garantir que os dados estejam atualizados e corretos antes de cada importação.
+Todos os dados a serem importados no sistema são obtidos no [SUAP](https://suap.ifsp.edu.br/). A CSP deve garantir que os dados estejam atualizados e corretos antes de cada importação.
 Estes documentos são essenciais para o funcionamento do sistema e sua correta importação é de extrema importância.
 
-Além disso, os documentos devem seguir os formatos e estruturas especificadas para evitar erros durante o processo de importação.
+> **Importante:** Sempre importe primeiramente o **Mapa de Docentes** no menu **Usuários** antes de importar os **Mapas de Turmas**.
 
 ### Mapa de Docentes
-- 📊 **Planilha** com mapa de docentes (.xls)
+- 📊 **Planilha** com mapa de docentes (`.xls` ou `.xlsx`)
 
 **Informações obrigatórias (*exemplo*):**
 
@@ -30,7 +30,7 @@ Além disso, os documentos devem seguir os formatos e estruturas especificadas p
 
 
 ### Mapa de Turmas
-- 📊 **Planilha** com mapa de turmas (.xls)
+- 📊 **Planilha** com mapa de turmas (`.xls` ou `.xlsx`)
 
 **Informações obrigatórias (*exemplo, células vazias à direita são mescladas*):**
 
@@ -42,52 +42,66 @@ Além disso, os documentos devem seguir os formatos e estruturas especificadas p
 | aluno 2           | 6                       | \-                      | CUR                     | 7,5 | 2 | CUR | 8,5 | 2 | CUR |
 
 
-## Cadastro de usuários
+## Cadastro e Gestão de Usuários
 
-No sistema, existem dois métodos principais para cadastrar usuários: importação em massa e cadastro manual. A seguir, detalhamos ambos os processos.
-Ambas se encontram no menu "Usuários"
+No sistema, existem dois métodos principais para cadastrar usuários no menu **"Usuários"**: importação em massa via planilha e cadastro manual.
 
-*Lembrando que a importação em massa só funciona para docentes. Membros da CSP devem ser cadastrados manualmente.*
+*Lembrando que a importação em massa cadastra automaticamente os **Docentes**, os **Cursos**, as **Turmas** e os **Componentes Curriculares**. Membros da CSP devem ser cadastrados manualmente na aba **CSP**.*
 
 ### Importando mapa de docentes
 
-A importação do mapa de docentes funciona ao arrastar e soltar a planilha ou selecioná-la manualmente no sistema. O sistema processa o arquivo e cria os usuários automaticamente.
+A importação do mapa de docentes funciona ao arrastar e soltar a planilha (`.xls`/`.xlsx`) ou selecioná-la manualmente no sistema. O sistema processa o arquivo, cria os docentes e vincula suas disciplinas automaticamente.
 
 <video className='w-full rounded-lg mt-8 shadow-lg bg-zinc-400' autoPlay loop muted>
   <source src="/Manuais/2024-2-ConselhoDeliberativo/assets/videos/csp-importar-docentes.mp4" type="video/mp4" />
   Seu navegador não suporta a reprodução de vídeos.
 </video>
 
-### Cadastro manual de usuários
+### Cadastro manual e edição de usuários
 
-Para o cadastro manual do usuário, você deve se atentar aos seguintes detalhes:
+Para o cadastro manual ou edição de um usuário existente:
 
-- Tipo de usuário selecionado: Docentes ou CSP
-- Clicar em "Novo Usuário"
-- Preencher os campos obrigatórios
-- Gerar senha temporária
+- Selecione a aba desejada no topo da página: **Docentes** ou **CSP**
+- Clique em **"Novo usuário"** (ou selecione um usuário na tabela para editar/redefinir senha)
+- Preencha **Nome**, **Matrícula (Prontuário)** e **E-mail**
+- Na aba **Docentes**, você também pode selecionar ou ajustar manualmente os **Componentes Curriculares** vinculados ao professor através do seletor múltiplo com busca por nome ou sigla
+- Defina a senha inicial (ou nova senha) e clique em **Salvar**
 
 <video className='w-full rounded-lg mt-8 shadow-lg bg-zinc-400' autoPlay loop muted>
   <source src="/Manuais/2024-2-ConselhoDeliberativo/assets/videos/csp-cadastrar-usuario.mp4" type="video/mp4" />
   Seu navegador não suporta a reprodução de vídeos.
 </video>
 
-## Importar Mapa de Turmas
+## Importar Mapa de Turmas e Consultar Resumo
 
-A importação do mapa de turmas é um processo crucial para garantir que todas as turmas e seus respectivos docentes estejam corretamente registrados no sistema. Siga os passos abaixo para realizar a importação com sucesso.
+A importação do mapa de turmas atualiza os discentes matriculados, suas notas por etapa/bimestre, médias por área de conhecimento, média global e frequência.
 
-Deve ser feito no menu **"Cursos Técnicos Integrados"** ou **"Cursos Técnicos Concomitantes e Subsequentes"**, dependendo da modalidade das turmas.
+Deve ser realizada no menu **"Cursos Técnicos Integrados"** ou **"Cursos Técnicos CON/SUB"**, dependendo da modalidade da turma:
+
+1. **Importação Padrão**: Selecione o curso correspondente na caixa de upload e arraste/selecione a planilha `.xls` ou `.xlsx`.
+2. **Importação Manual (Switch "Importação Manual")**: Caso deseje atualizar uma turma específica diretamente, ative a chave **"Importação Manual"**, selecione o **Curso** e a **Turma** nos seletores exibidos acima da área de upload e envie a planilha.
 
 <video className='w-full rounded-lg mt-8 shadow-lg bg-zinc-400' autoPlay loop muted>
   <source src="/Manuais/2024-2-ConselhoDeliberativo/assets/videos/csp-importar-turma.mp4" type="video/mp4" />
   Seu navegador não suporta a reprodução de vídeos.
 </video>
 
-## Definir Coordenador de Curso
+### Recursos na Listagem de Turmas
+- **Filtro por Bimestre (Ensino Integrado)**: Na parte superior da lista de turmas integradas, filtre rapidamente as atas exibidas clicando em `Todos`, `1º Bimestre`, `2º Bimestre`, `3º Bimestre` ou `4º Bimestre`.
+- **Resumo Turma e Exportação XLS**: Ao clicar em **Resumo Turma** ao lado do nome da turma, abre-se uma janela com:
+  - **Legenda de cores**: Vermelho (*Média abaixo de 4*), Amarelo (*Média entre 4 e 6*), Cinza (*Nota vazia: -*) e Laranja (*Frequência abaixo de 80%*).
+  - **Alternância de Visualização**: Botões para alternar entre o **Consolidado Geral** e cada etapa individual (**1º Bimestre**, **2º Bimestre**, etc.).
+  - **Botão Exportar XLS** (exclusivo CSP): Permite baixar a planilha Excel com o resumo consolidado da turma.
+- **Exclusão de Turma**: Membros da CSP possuem o ícone de lixeira ao lado de cada turma para removê-la mediante confirmação.
 
-Após a importação de dados de turmas e docentes, é essencial definir os coordenadores de curso para garantir que cada turma tenha um responsável designado. Siga os passos abaixo para atribuir coordenadores às turmas corretamente.
+## Definir Coordenador de Curso e Ver Docentes Relacionados
 
-Deve ser feito no menu **"Cursos"**.
+No menu **"Cursos"**, a CSP define o docente responsável pela coordenação de cada curso:
+
+1. Selecione o curso desejado na listagem
+2. No campo **Coordenador**, pesquise e selecione o docente responsável
+3. Ative, se desejar, a chave **"Mostrar docentes relacionados"** para visualizar todos os professores e prontuários vinculados àquele curso
+4. Clique em **Salvar**
 
 <video className='w-full rounded-lg mt-8 shadow-lg bg-zinc-400' autoPlay loop muted>
   <source src="/Manuais/2024-2-ConselhoDeliberativo/assets/videos/csp-definir-coordenador.mp4" type="video/mp4" />
@@ -96,4 +110,4 @@ Deve ser feito no menu **"Cursos"**.
 
 ---
 
-*Este treinamento capacita completamente a CSP para administração autônoma do sistema.*
+*Continue para a próxima seção para aprender a gerenciar as [Atas Pedagógicas e Deliberativas](./atas/).*

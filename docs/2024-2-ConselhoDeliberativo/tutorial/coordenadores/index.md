@@ -6,7 +6,7 @@ tags: [treinamento, coordenadores, pareceres, edição]
 
 # Treinamento para Coordenadores
 
-Esta seção é um complemento ao [Treinamento para Docentes](/tutorial/docentes) e aborda funcionalidades específicas para coordenadores de curso no sistema de gestão de atas do Conselho Deliberativo e Pedagógico do IFSP de Presidente Epitácio.
+Esta seção é um complemento ao [Treinamento para Docentes](../docentes/) e aborda funcionalidades específicas para coordenadores de curso no sistema de gestão de atas do Conselho Deliberativo e Pedagógico do IFSP de Presidente Epitácio.
 
 ## Funcionalidade Adicional: Campo de Parecer do Coordenador
 
