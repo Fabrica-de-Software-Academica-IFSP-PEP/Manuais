@@ -66,4 +66,4 @@ As atas são identificadas por turma e curso e filtradas conforme pertinentes ao
 
 ---
 
-*Para instruções detalhadas, consulte o [Treinamento para Coordenadores](/tutorial/coordenadores).*
+*Para instruções detalhadas, consulte o [Treinamento para Coordenadores](../../tutorial/coordenadores/).*
