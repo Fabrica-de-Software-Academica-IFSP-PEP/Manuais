@@ -4,9 +4,9 @@ sidebar_position: 1
 slug: /
 ---
 
-# 📚 Manuais de Sistema
+# 📚 Manuais do Usuário
 
-Bem-vindo à central de manuais dos sistemas desenvolvidos pela **Fábrica de Software Acadêmica** do IFSP — Campus Presidente Epitácio.
+Bem-vindo à central de manuais dos usuários desenvolvidos pela **Fábrica de Software Acadêmica** do IFSP — Campus Presidente Epitácio.
 
 Aqui você encontra a documentação de cada sistema organizada por projeto e semestre.
 

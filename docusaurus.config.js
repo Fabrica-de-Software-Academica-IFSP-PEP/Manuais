@@ -3,7 +3,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Manuais de Sistema',
+  title: 'Manuais de Usuário',
   tagline: 'Fábrica de Software Acadêmica — IFSP Campus Presidente Epitácio',
   favicon: 'img/favicon.ico',
 
@@ -52,7 +52,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Manuais de Sistema',
+        title: 'Manuais de Usuário',
         items: [
           {
             type: 'docSidebar',
