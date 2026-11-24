@@ -1,6 +1,6 @@
-# Manuais de Sistema — Fábrica de Software IFSP/PEP
+# Manuais do Usuário — Fábrica de Software IFSP/PEP
 
-Este repositório consolida a coleção de manuais de sistemas desenvolvidos pela Fábrica de Software do IFSP - Campus Presidente Epitácio. O projeto é construído utilizando [Docusaurus](https://docusaurus.io/), um gerador moderno de sites estáticos que converte arquivos Markdown (`.md`) em um site interativo e padronizado.
+Este repositório consolida a coleção de manuais de usuário desenvolvidos pela Fábrica de Software do IFSP - Campus Presidente Epitácio. O projeto é construído utilizando [Docusaurus](https://docusaurus.io/), um gerador moderno de sites estáticos que converte arquivos Markdown (`.md`) em um site interativo e padronizado.
 
 ---
 
