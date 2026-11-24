@@ -64,7 +64,7 @@ Este é o perfil com a **permissão administrativa total** das funcionalidades d
    - Criar a **Ata Deliberativa**
    - Registrar informações de ETEP, NAPNE e Parecer Pedagógico de cada aluno submetido ao conselho
    - Clicar em **Abrir Votação** para que os docentes votem em tempo real e, após todos votarem, clicar em **Encerrar Votação**
-   - Revisar a **Deliberação Final** (pré-preenchida pela maioria dos votos), salvar e clicar em **Validar e Fechar Ata**
+   - Revisar a **Deliberação Final** (pré-preenchida pela maioria dos votos), salvar e clicar em **Finalizar Ata**
 
 4. **Consulta e Arquivo:**
    - Utilizar o menu **Histórico de Atas** para filtrar atas por ano letivo, modalidade, curso, tipo de conselho ou bimestre e baixar os PDFs oficiais

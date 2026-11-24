@@ -13,10 +13,9 @@ Esta seção é um complemento ao [Treinamento para Docentes](../docentes/) e ab
 O **campo de parecer do coordenador** é um campo específico nas atas que permite ao coordenador adicionar observações e pareceres sobre a turma que coordena. Este campo é editável apenas por usuários com a função de coordenador.
 
 ### Como Preencher
-**Clique** no campo de parecer:
-1. **Cursor** aparece no campo
-2. **Digite** suas observações
-3. **Perca o foco** do campo para salvar automaticamente
+1. **Acesse a ata** da turma que você coordena
+2. **Digite** suas observações no campo **"Considerações do Coordenador do Curso em relação a turma"**
+3. Clique no botão **"Salvar Informações Iniciais"** logo abaixo do bloco para gravar as alterações
 
 <img
   src="/Manuais/2024-2-ConselhoDeliberativo/assets/images/coordenador-ata.png"
